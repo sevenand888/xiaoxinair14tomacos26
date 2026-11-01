@@ -1,0 +1,180 @@
+{
+  "components": [
+    {
+      "name": "OpenCorePkg",
+      "version": "1.0.8",
+      "license": "BSD-3-Clause",
+      "source_ref": "1.0.8",
+      "source_url": "https://github.com/acidanthera/OpenCorePkg/tree/1.0.8",
+      "license_url": "https://github.com/acidanthera/OpenCorePkg/blob/1.0.8/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/OpenCorePkg/1.0.8/LICENSE.txt",
+      "license_file": "OpenCorePkg-LICENSE.txt",
+      "sha256": "4ca709aac88e7b297e794f464d6557203b23a4e92e792b579bb968fef2bce4c4"
+    },
+    {
+      "name": "Lilu",
+      "version": "1.7.2",
+      "license": "BSD-3-Clause",
+      "source_ref": "1.7.2",
+      "source_url": "https://github.com/acidanthera/Lilu/tree/1.7.2",
+      "license_url": "https://github.com/acidanthera/Lilu/blob/1.7.2/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/Lilu/1.7.2/LICENSE.txt",
+      "license_file": "Lilu-LICENSE.txt",
+      "sha256": "74c3ca48189b796b0d262866e67de8efba77a71516667ce68dc3a8f13c2a3c57"
+    },
+    {
+      "name": "WhateverGreen",
+      "version": "1.7.1",
+      "license": "BSD-3-Clause",
+      "source_ref": "1.7.1",
+      "source_url": "https://github.com/acidanthera/WhateverGreen/tree/1.7.1",
+      "license_url": "https://github.com/acidanthera/WhateverGreen/blob/1.7.1/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/WhateverGreen/1.7.1/LICENSE.txt",
+      "license_file": "WhateverGreen-LICENSE.txt",
+      "sha256": "8f99f6082ccc808df2ece79446108bfd5c0c04da9ba81c5463568ced862a0b05"
+    },
+    {
+      "name": "VirtualSMC",
+      "version": "1.3.8",
+      "license": "BSD-3-Clause",
+      "source_ref": "1.3.8",
+      "source_url": "https://github.com/acidanthera/VirtualSMC/tree/1.3.8",
+      "license_url": "https://github.com/acidanthera/VirtualSMC/blob/1.3.8/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/VirtualSMC/1.3.8/LICENSE.txt",
+      "license_file": "VirtualSMC-LICENSE.txt",
+      "sha256": "5bceff635b9952d36af4e784ee02158cdddb6001584439cbd8a3520eb46a28e8"
+    },
+    {
+      "name": "AppleALC",
+      "version": "1.9.8",
+      "license": "BSD-3-Clause",
+      "source_ref": "1.9.8",
+      "source_url": "https://github.com/acidanthera/AppleALC/tree/1.9.8",
+      "license_url": "https://github.com/acidanthera/AppleALC/blob/1.9.8/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/AppleALC/1.9.8/LICENSE.txt",
+      "license_file": "AppleALC-LICENSE.txt",
+      "sha256": "49f8ba3af70ae3fe5883f68759f7ddab40bd665b35439ea6b3f72f1b5b3229f7"
+    },
+    {
+      "name": "NVMeFix",
+      "version": "1.1.3",
+      "license": "BSD-3-Clause and GPL-2.0",
+      "source_ref": "1.1.3",
+      "source_url": "https://github.com/acidanthera/NVMeFix/tree/1.1.3",
+      "license_url": "https://github.com/acidanthera/NVMeFix/blob/1.1.3/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/NVMeFix/1.1.3/LICENSE.txt",
+      "license_file": "NVMeFix-LICENSE.txt",
+      "sha256": "128310a94b293ed30e4f20124ac0e3e45020f00570f18272bd874a419e172d54"
+    },
+    {
+      "name": "itlwm",
+      "version": "v2.3.0",
+      "license": "GPL-2.0",
+      "source_ref": "v2.3.0",
+      "source_url": "https://github.com/OpenIntelWireless/itlwm/tree/v2.3.0",
+      "license_url": "https://github.com/OpenIntelWireless/itlwm/blob/v2.3.0/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/OpenIntelWireless/itlwm/v2.3.0/LICENSE",
+      "license_file": "itlwm-LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "name": "IntelBluetoothFirmware",
+      "version": "v2.4.0",
+      "license": "GPL-3.0",
+      "source_ref": "v2.4.0",
+      "source_url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/tree/v2.4.0",
+      "license_url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/blob/v2.4.0/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/OpenIntelWireless/IntelBluetoothFirmware/v2.4.0/LICENSE",
+      "license_file": "IntelBluetoothFirmware-LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "name": "BrcmPatchRAM",
+      "version": "2.7.2",
+      "license": "GPL-2.0",
+      "source_ref": "2.7.2",
+      "source_url": "https://github.com/acidanthera/BrcmPatchRAM/tree/2.7.2",
+      "license_url": "https://github.com/acidanthera/BrcmPatchRAM/blob/2.7.2/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/BrcmPatchRAM/2.7.2/LICENSE",
+      "license_file": "BrcmPatchRAM-LICENSE",
+      "sha256": "a45d0bb572ed792ed34627a72621834b3ba92aab6e2cc4e04301dee7a728d753"
+    },
+    {
+      "name": "VoodooPS2",
+      "version": "2.3.7",
+      "license": "APSL-2.0",
+      "source_ref": "2.3.7",
+      "source_url": "https://github.com/acidanthera/VoodooPS2/tree/2.3.7",
+      "license_url": "https://github.com/acidanthera/VoodooPS2/blob/2.3.7/LICENSE.md",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/VoodooPS2/2.3.7/LICENSE.md",
+      "license_file": "VoodooPS2-LICENSE.md",
+      "sha256": "a39052e57440a9ed957bf57b2f5690853e283db8b211267422e2e81f39ea5c94"
+    },
+    {
+      "name": "VoodooI2C",
+      "version": "2.9.1",
+      "license": "GPL-3.0",
+      "source_ref": "v2.9.1",
+      "source_url": "https://github.com/VoodooI2C/VoodooI2C/tree/v2.9.1",
+      "license_url": "https://github.com/VoodooI2C/VoodooI2C/blob/v2.9.1/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/VoodooI2C/VoodooI2C/v2.9.1/LICENSE.txt",
+      "license_file": "VoodooI2C-LICENSE.txt",
+      "sha256": "8169ac6d6270c2db585ca7cf4ebb3881ebf43a78e7b85a148df724e75ec41d96"
+    },
+    {
+      "name": "VoodooInput",
+      "version": "1.1.6",
+      "license": "GPL-2.0",
+      "source_ref": "1.1.6",
+      "source_url": "https://github.com/acidanthera/VoodooInput/tree/1.1.6",
+      "license_url": "https://github.com/acidanthera/VoodooInput/blob/1.1.6/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/VoodooInput/1.1.6/LICENSE.txt",
+      "license_file": "VoodooInput-LICENSE.txt",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "name": "BrightnessKeys",
+      "version": "1.0.3",
+      "license": "BSD-3-Clause",
+      "source_ref": "1.0.3",
+      "source_url": "https://github.com/acidanthera/BrightnessKeys/tree/1.0.3",
+      "license_url": "https://github.com/acidanthera/BrightnessKeys/blob/1.0.3/LICENSE",
+      "download_url": "https://raw.githubusercontent.com/acidanthera/BrightnessKeys/1.0.3/LICENSE",
+      "license_file": "BrightnessKeys-LICENSE",
+      "sha256": "17a0dd93c3b63e169260c44e5972065e88c0a749c88bb3a8666730b93445a3d1"
+    },
+    {
+      "name": "WhateverXe",
+      "version": "v0.6.0",
+      "license": "BSD-3-Clause",
+      "source_ref": "0.6.0",
+      "source_url": "https://github.com/b00t0x/WhateverXe/tree/0.6.0",
+      "license_url": "https://github.com/b00t0x/WhateverXe/blob/0.6.0/LICENSE.txt",
+      "download_url": "https://raw.githubusercontent.com/b00t0x/WhateverXe/0.6.0/LICENSE.txt",
+      "license_file": "WhateverXe-LICENSE.txt",
+      "sha256": "8f99f6082ccc808df2ece79446108bfd5c0c04da9ba81c5463568ced862a0b05"
+    },
+    {
+      "name": "itlwm-firmware",
+      "version": "v2.3.0",
+      "license": "Intel firmware redistribution terms",
+      "source_ref": "v2.3.0",
+      "source_url": "https://github.com/OpenIntelWireless/itlwm/tree/v2.3.0",
+      "license_url": "https://github.com/OpenIntelWireless/itlwm/blob/v2.3.0/iwlwifi-firmware-license",
+      "download_url": "https://raw.githubusercontent.com/OpenIntelWireless/itlwm/v2.3.0/iwlwifi-firmware-license",
+      "license_file": "itlwm-firmware-LICENSE",
+      "sha256": "16d5040c7cf851fc693b7542e20870935b99802533ea1bfd231c377a2305e5c5"
+    },
+    {
+      "name": "IntelBluetoothFirmware-firmware",
+      "version": "v2.4.0",
+      "license": "Intel firmware redistribution terms",
+      "source_ref": "v2.4.0",
+      "source_url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/tree/v2.4.0",
+      "license_url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/blob/v2.4.0/iwlwifi-firmware-license",
+      "download_url": "https://raw.githubusercontent.com/OpenIntelWireless/IntelBluetoothFirmware/v2.4.0/iwlwifi-firmware-license",
+      "license_file": "IntelBluetoothFirmware-firmware-LICENSE",
+      "sha256": "2f51946732a6e93a224fec4ab49b93ebd106aef6c52b1ebfa490795a19fac21f"
+    }
+  ]
+}

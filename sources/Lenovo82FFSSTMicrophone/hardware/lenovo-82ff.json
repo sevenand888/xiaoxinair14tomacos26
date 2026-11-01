@@ -1,0 +1,33 @@
+{
+  "tested_model": "Lenovo Xiaoxin Air14 ITL 2021 / 82FF",
+  "target_model": "Lenovo Xiaoxin Air14 ITL 2021 / 82FF",
+  "pci_vendor": "8086",
+  "pci_device": "a0c8",
+  "pci_subsystem_vendor": "17aa",
+  "pci_subsystem_device": "381d",
+  "codec_subsystem_not_pci": "17aa:3894",
+  "pci_address": "00:1f.3",
+  "dsp": "Tiger Lake-LP / cAVS 2.5, host-managed core mask 1",
+  "capture": {
+    "physical_pdm_controller": 0,
+    "microphones": [
+      "A",
+      "B"
+    ],
+    "io_clock_hz": 38400000,
+    "clock_divisor": 16,
+    "pdm_clock_hz": 2400000,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "container_bits": 32,
+    "nhlt_valid_bits": 32,
+    "clock_edge": 0,
+    "clock_skew": 0,
+    "duty_min_percent": 50,
+    "duty_max_percent": 50
+  },
+  "provenance": "Decoded 82FF NHLT scalar fields. The codec subsystem is not the PCI controller subsystem. Exact 50% encodes divider 16; it is not a measured electrical tolerance.",
+  "nhlt_sha256": "f6a18756d03565a7cd67f7074af26c10d069e14a80e337ba22f12bd5b3fcb9d8",
+  "runtime_verified": true,
+  "verification_scope": "One Lenovo 82FF on macOS 26.7.1 (25G241): clear user-confirmed speech before reboot; automated stereo acoustic test after reboot. Sleep/wake not tested."
+}

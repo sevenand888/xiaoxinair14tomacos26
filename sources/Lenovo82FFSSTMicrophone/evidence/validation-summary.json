@@ -1,0 +1,37 @@
+{
+  "model": "Lenovo Xiaoxin Air14 ITL 2021 / 82FF",
+  "os": "macOS 26.7.1 (25G241)",
+  "date": "2026-11-01",
+  "driver_version": "0.3.2",
+  "binary_sha256": "44070aa05b41086159730acc24021a771bda80e611f15e58de8193f37010383a",
+  "capture": {
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "pdm": 0,
+    "user_confirmed_clear_speech_before_reboot": true,
+    "post_reboot_test_kind": "automated reference-tone acoustic test",
+    "matched_complete_cycles_per_channel": [
+      4,
+      4
+    ],
+    "ipc_steps_done": 12,
+    "ipc_errors": 0,
+    "clock_edge_misses": 0,
+    "capture_stopped_and_owned_streams_restored": true
+  },
+  "publication": {
+    "startup_minimum_age_seconds": 70,
+    "observed_publication_boot_age_seconds_approximately": 85,
+    "default_input_restored_after_publication": true,
+    "second_reboot_publication_verified": true,
+    "requires_automatic_login": false
+  },
+  "not_verified": [
+    "sleep/wake",
+    "long-duration recording",
+    "multi-application capture",
+    "headset microphone",
+    "noise suppression",
+    "echo cancellation"
+  ]
+}

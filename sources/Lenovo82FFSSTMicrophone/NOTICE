@@ -1,0 +1,30 @@
+Lenovo82FFSSTMicrophone 0.3.2 — Lenovo 82FF / Tiger Lake / PDM0 adaptation.
+
+Derived from RazerSSTMicrophone, commit
+17cff4e3cb074235d51fa01f3f633222ea558597:
+https://github.com/MarkPLacer/RazerSSTMicrophone
+
+Original copyright (c) 2026 MarkPLacer, project modifications and packaging.
+Adapted components retain copyright (c) 2026 DexterSLamb and Shubham Banekar.
+Intel SOF register/protocol work retains Intel Corporation copyright,
+including 2017–2021 for the referenced Linux SOF files.
+The upstream author credits substantial AI assistance (GPT-6.1 Sol).
+
+Project source: BSD-3-Clause. Full donor and Intel terms are in licenses/.
+The complete SOF firmware release license is licenses/SOF-LICENCE.Intel.
+MacKernelSDK and the linked runtime retain their own applicable terms,
+including licenses/MacKernelSDK-APSL-2.0.txt and source-file notices.
+
+This fork uses the original Intel-signed SOF TGL 2.2 IPC3 firmware.
+It is downloaded for a local build and embedded unchanged.
+Runtime transfer is into volatile DSP memory.
+
+LatSOFAudio source pin: 41fda77bd5321464fef5ba71a44437f993215d55
+Linux source pin: 58161ead29e50d70a317ea26b472e0c7508e69da
+SOF source pin: 57864296b07c5ffd673214dd5b1e3d07ee274a22
+SOF binary pin: fcd5ae85ead7ecd67ff199335b61fac825843ca0
+MacKernelSDK pin: 3f750085caa17ec3a7880f11c11bf4f48cd6a164
+
+The original successful signed kext is retained separately under
+tahoe26/audio. Its bundled NOTICE is the original upstream attribution
+document. This fork's target is Lenovo 82FF / TGL / PDM0.

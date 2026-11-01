@@ -1,0 +1,9 @@
+{
+  "publisherSHA256": "55e2936f6fe9caf300711d687ec1d2c39e80e2f734b1c29d6611be690c03d4bd",
+  "files": {
+    "publish": "55e2936f6fe9caf300711d687ec1d2c39e80e2f734b1c29d6611be690c03d4bd",
+    "publish-once.sh": "f319d8d9985ffde51080284cef4cb42ab8892314a1416ac41bbbf10da389337d",
+    "local.codex.Lenovo82FFSSTPublish.plist": "f627a0932c1df680600d5bf96c2b0a3732c55d1d745cdbd364fda061f92ab3b6",
+    "manage.py": "2958ab9f487843daf2628dc79d11b8f11464288efef36ff8819cd22209f605ef"
+  }
+}

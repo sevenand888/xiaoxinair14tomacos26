@@ -1,0 +1,10 @@
+{
+  "upstream_repository": "https://github.com/laobamac/SimpleHDA.git",
+  "upstream_commit": "7517b04bb3e59306550f3c678e809e6494e5dd4b",
+  "base_kern_start_sha256_lf": "dbf89aeeefbd24ce3385e1b45484ed11996aacc4c438d078b2e19751a1361c5e",
+  "patched_kern_start_sha256_lf": "e94b4145f2d9b2dbb330ba728fa557dd27b315a802df0242438621c313d11955",
+  "added_files": {
+    "Sources/SHDAHDAUIdentity.hpp": "031ee38782346452a013620614d14a019f6258c1b64a8862023f5a04fc17312a",
+    "Tools/test_hdau_identity.cpp": "bace4ae6326780bc0e9ed5daa2949deee79f3f43c0a9f5d98d1775c5c64802bc"
+  }
+}

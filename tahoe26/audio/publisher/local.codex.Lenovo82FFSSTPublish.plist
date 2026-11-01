@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ExitTimeOut</key>
+	<integer>15</integer>
+	<key>GroupName</key>
+	<string>wheel</string>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>local.codex.Lenovo82FFSSTPublish</string>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/env</string>
+		<string>-i</string>
+		<string>PATH=/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<string>LC_ALL=C</string>
+		<string>/bin/bash</string>
+		<string>--noprofile</string>
+		<string>--norc</string>
+		<string>/Library/PrivilegedHelperTools/local.codex.Lenovo82FFSSTPublish/publish-once.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/private/var/log/lenovo82ff-sst-publish.log</string>
+	<key>StandardOutPath</key>
+	<string>/private/var/log/lenovo82ff-sst-publish.log</string>
+	<key>Umask</key>
+	<integer>23</integer>
+	<key>UserName</key>
+	<string>root</string>
+</dict>
+</plist>

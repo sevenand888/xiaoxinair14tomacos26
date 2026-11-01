@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "note": "Exact successful SST bundle preserved; local Apple payload inputs and generated SimpleHDA products are excluded.",
+  "files": {
+    "Lenovo82FFSSTMicrophone.kext/Contents/_CodeSignature/CodeResources": "e98b4fd4d95db8e4685fec9da2502c56b87e0c46a55a28c542aeb8b18a2ff091",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Info.plist": "ead6b3818a1860ffa42ba66d6dd41e0d4f331fe1306d6430fda0e8b6b20fb1bd",
+    "Lenovo82FFSSTMicrophone.kext/Contents/MacOS/Lenovo82FFSSTMicrophone": "44070aa05b41086159730acc24021a771bda80e611f15e58de8193f37010383a",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Resources/Licenses/Intel-SOF-BSD-3-Clause.txt": "5235977e28a7a856e833f79e9bd8feb1e917e462a2aeac53cefab9c708d361a0",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Resources/Licenses/LatSOFAudio-BSD-3-Clause.txt": "3b41671ce7c3ed2dd922582fc0bc5b5e8d9e481c5fceda52dd862d4271187631",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Resources/Licenses/LICENSE": "04494fae176cf7f8b953d36c1d1ce51f22db0a9911d0fa367198364082ecedee",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Resources/Licenses/MacKernelSDK-APSL-2.0.txt": "e5881019d8766c1e88a5fe1dbca4ba40c78011d41fcb18f6e9f50df60182685b",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Resources/Licenses/NOTICE": "779a26f6345dfdf2d807e5c70759cef134e7b70c21e91289a7db702490ccb838",
+    "Lenovo82FFSSTMicrophone.kext/Contents/Resources/Licenses/SOF-LICENCE.Intel": "80169325f69cf8288ff225b590ca4bf2e8e2a15759076616fae0bfe2610427c9",
+    "mic-input-check": "e3bcc193e3a7c9af93f0137e6d3bbe5b54cfd86ca855f85c853b816f471cfd23",
+    "publisher/local.codex.Lenovo82FFSSTPublish.plist": "f627a0932c1df680600d5bf96c2b0a3732c55d1d745cdbd364fda061f92ab3b6",
+    "publisher/manage.py": "2958ab9f487843daf2628dc79d11b8f11464288efef36ff8819cd22209f605ef",
+    "publisher/package-manifest.json": "964af1807dd21fa258130fbc284e644cddd1278c1d63041ae0412233b49f2373",
+    "publisher/publish": "55e2936f6fe9caf300711d687ec1d2c39e80e2f734b1c29d6611be690c03d4bd",
+    "publisher/publish-once.sh": "f319d8d9985ffde51080284cef4cb42ab8892314a1416ac41bbbf10da389337d",
+    "publisher/README.md": "ba23e5172606fbb15ce64bceffeeb0cc71b5884d2c92cf7e6ab45248138e803f",
+    "README.md": "8a640f36e5a3bf1c87f37d8982aa5a1481f416565d4bfee54aa1e6ec3558b1c8",
+    "select-input-uid.m": "a437771e3ba81eae09fe6b8881d77d83a30abc595aaf94ce8c4c5200008e2783",
+    "simplehda/build-simplehda-clt.py": "73caf98ee368233346dd4ec455596d2f33dd48f13574a02054eb2784a612491e",
+    "simplehda/build-validation.json": "c59cbd15bdeee88a527ad83e7dc58018eb7032789488cdebba951830d41e79af",
+    "simplehda/prepare-applehda.py": "17b02843e78be1a4dd748b8b60f8d8ee09380c4b26b4d91f2186df2a506aadc1",
+    "simplehda/preprobe.patch": "a52ebe4517e69e4cdde1656b5e68293ce50d14965645669ebb472cfa67a8ba9b",
+    "simplehda/README.md": "0dbf701a0916064a1369ef4cd54a9a9b525e225efbb5396cf0d8a2a63d480f85",
+    "simplehda/source-pin.json": "74ba68445dc8f8eafb3101782a8d297b66ce1294cb734300a74ce7f271ca28f9",
+    "simplehda/Sources/SHDAHDAUIdentity.hpp": "031ee38782346452a013620614d14a019f6258c1b64a8862023f5a04fc17312a",
+    "simplehda/Tools/test_hdau_identity.cpp": "bace4ae6326780bc0e9ed5daa2949deee79f3f43c0a9f5d98d1775c5c64802bc",
+    "verify-package.py": "b8db4ec386ef0503fd3076ad7ae3a5ee86e1de09e87350306c3e6f889b3dc9ac"
+  }
+}

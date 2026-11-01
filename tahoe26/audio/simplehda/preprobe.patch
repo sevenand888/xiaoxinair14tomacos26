@@ -1,0 +1,59 @@
+--- a/Sources/kern_start.cpp
++++ b/Sources/kern_start.cpp
+@@ -11,0 +12 @@
++#include <IOKit/IOService.h>
+@@ -25,0 +27 @@
++#include "SHDAHDAUIdentity.hpp"
+@@ -31,0 +34,42 @@
++// Bounded diagnostic, inactive unless explicitly requested at boot.
++const char *hdauPaths[] {"/Library/Extensions/HDAUniversal.kext/Contents/MacOS/HDAUniversal"};
++KernelPatcher::KextInfo hdauKext {
++    "org.olarila.driver.HDAUniversal", hdauPaths, 1, {}, {}, KernelPatcher::KextInfo::Unloaded
++};
++constexpr const char *hdauProbeSymbol = "__ZN18HDAUniversalDevice5probeEP9IOServicePi";
++bool hdauIsolationRequested;
++bool hdauHookInstalled;
++uint32_t hdauProbeRejectCount;
++void hdauIsolationState(const char *value) {
++    IOLog("SimpleHDA: HDAUniversal probe isolation=%s\n", value);
++    auto root = IORegistryEntry::getRegistryRoot();
++    if (root) {
++        root->setProperty("SimpleHDAHDAUIsolation", value);
++        root->setProperty("SimpleHDAHDAUTarget", "1.0.46/82590B0E-68E9-30B0-A824-B3D51FD4890E");
++    }
++}
++IOService *rejectHDAUProbe(IOService *, IOService *, SInt32 *) {
++    // Do not call the original probe, superclass probe, start, or initHardware.
++    auto count = __atomic_add_fetch(&hdauProbeRejectCount, 1U, __ATOMIC_RELAXED);
++    auto root = IORegistryEntry::getRegistryRoot();
++    if (root) root->setProperty("SimpleHDAHDAUProbeRejectCount", count, 32);
++    if (count == 1) hdauIsolationState("probe-rejected-before-start");
++    return nullptr;
++}
++void hdauLoaded(void *, KernelPatcher &patcher, size_t index, mach_vm_address_t address, size_t size) {
++    if (!hdauIsolationRequested || hdauHookInstalled ||
++        hdauKext.loadIndex == KernelPatcher::KextInfo::Unloaded || index != hdauKext.loadIndex) return;
++    if (address < 0xffffff0000000000ULL) { hdauIsolationState("invalid-kernel-address"); return; }
++    auto failure = shda::hdauDiagnostic::checkImage(reinterpret_cast<const void *>(address), size);
++    if (failure) { hdauIsolationState(failure); return; }
++    auto probe = patcher.solveSymbol(index, hdauProbeSymbol, address, size);
++    if (!probe) { patcher.clearError(); hdauIsolationState("probe-symbol-not-found"); return; }
++    failure = shda::hdauDiagnostic::checkProbe(address, size, probe);
++    if (failure) { hdauIsolationState(failure); return; }
++    KernelPatcher::RouteRequest request(hdauProbeSymbol, rejectHDAUProbe);
++    if (!patcher.routeMultiple(index, &request, 1, address, size)) {
++        patcher.clearError(); hdauIsolationState("probe-route-failed"); return;
++    }
++    hdauHookInstalled = true;
++    hdauIsolationState("probe-hook-installed-awaiting-match");
++}
+@@ -372,0 +417,9 @@
++    hdauIsolationRequested = checkKernelArgument("-shdaskiphdau");
++    if (hdauIsolationRequested) {
++        // No Loaded/Reloadable flags: this must intercept a fresh load, not a
++        // driver that may already have initialized hardware.
++        hdauIsolationState("waiting-for-hdau-fresh-load");
++        auto isolationError = lilu.onKextLoad(&hdauKext, 1, hdauLoaded);
++        if (isolationError != LiluAPI::Error::NoError)
++            hdauIsolationState("callback-registration-failed");
++    }

@@ -1,0 +1,42 @@
+{
+  "driver_version": "0.3.2",
+  "snapshot_date": "2026-11-01",
+  "reference_binary_sha256": "44070aa05b41086159730acc24021a771bda80e611f15e58de8193f37010383a",
+  "files": [
+    {
+      "file": "src/AudioPCM.hpp",
+      "sha256": "f606fd53a5c7d7275877851fa1aa19aea32f2bb216ba634c2469fa506ee21cd3",
+      "same_as_successful_local_source": true
+    },
+    {
+      "file": "src/Info.plist",
+      "sha256": "ead6b3818a1860ffa42ba66d6dd41e0d4f331fe1306d6430fda0e8b6b20fb1bd",
+      "same_as_successful_local_source": true
+    },
+    {
+      "file": "src/Lenovo82FFMicAudio.hpp",
+      "sha256": "d9a02ed9d53d764df01056b44ef085618d08411ac6ccd42d631b683db58b2402",
+      "same_as_successful_local_source": true
+    },
+    {
+      "file": "src/Lenovo82FFMicAudio.inc",
+      "sha256": "045753751a0eaa62a6b81aead4fe60f039e520e819d0958ab44c1bd1e1287028",
+      "same_as_successful_local_source": true
+    },
+    {
+      "file": "src/Lenovo82FFSSTMicrophone.cpp",
+      "sha256": "b16afa5e0a21df8642f71dbca6fefcde5ee0f0d8df255208ec2f0efae4279b1c",
+      "same_as_successful_local_source": true
+    },
+    {
+      "file": "src/ModuleInfo.cpp",
+      "sha256": "c8b870d3aa9c7fd0eeecc20365fd75addcb84d476dfe09c857f5370ad4911a27",
+      "same_as_successful_local_source": true
+    },
+    {
+      "file": "src/SSTProtocol.hpp",
+      "sha256": "5959c89f3a6d616d8ab6838f0eb7e16d94f8e9fbd4d7767d1b8886a217eccda2",
+      "same_as_successful_local_source": true
+    }
+  ]
+}

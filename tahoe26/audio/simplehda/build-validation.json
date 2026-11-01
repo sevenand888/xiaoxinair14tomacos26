@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-01",
+  "toolchain": {
+    "python": "3.9.6",
+    "compiler": "Apple clang 16",
+    "build_system": "Command Line Tools"
+  },
+  "upstream_commit": "7517b04bb3e59306550f3c678e809e6494e5dd4b",
+  "kdk": "14.8.9 (23J631)",
+  "payload_version": "540.3",
+  "kdk_extraction": "passed",
+  "payload_apple_signature_and_five_module_hashes": "passed",
+  "minimal_patch_application": "passed",
+  "kext_compile_and_static_verification": "passed",
+  "hal_package_build": "passed",
+  "generated_kext_executable_sha256": "c5c67196256bfeb7978012a3b5fd8d10694600758d2c3fad0563c24f63974a83",
+  "generated_hal_package_sha256": "9f975d7c52533a52603a98ec588819074ae2c6bcdd0dfd92daf3f316b1b2f99b",
+  "build_location": "independent temporary checkout",
+  "live_kernel_collection_hashes_unchanged": true
+}

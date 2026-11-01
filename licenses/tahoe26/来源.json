@@ -1,0 +1,24 @@
+{
+  "licenses": [
+    {
+      "file": "WhateverXe-0.6.1-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/b00t0x/WhateverXe/0.6.1/LICENSE.txt",
+      "sha256": "8f99f6082ccc808df2ece79446108bfd5c0c04da9ba81c5463568ced862a0b05"
+    },
+    {
+      "file": "AirportItlwm-8ae5115-LICENSE",
+      "url": "https://raw.githubusercontent.com/laobamac/itlwm/8ae5115/LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "file": "AirportItlwm-8ae5115-firmware-LICENSE",
+      "url": "https://raw.githubusercontent.com/laobamac/itlwm/8ae5115/iwlwifi-firmware-license",
+      "sha256": "16d5040c7cf851fc693b7542e20870935b99802533ea1bfd231c377a2305e5c5"
+    },
+    {
+      "file": "IntelBTPatcher-2.5.2-LICENSE",
+      "url": "https://raw.githubusercontent.com/lshbluesky/IntelBluetoothFirmware/v2.5.2/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    }
+  ]
+}

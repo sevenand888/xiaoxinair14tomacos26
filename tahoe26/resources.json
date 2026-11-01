@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "platform": "tahoe26",
+  "status": "requires-personalization-and-resources",
+  "config_sha256": "c455bd4403c2a79e496895bd4905659ec9ef63cc84213c2fe338c93a7e6794d8",
+  "install_config_sha256": "ba82a7bba72ba16d5a32abb95341fa2570778ebb4708e0a5f5502e5b70bbed36",
+  "items": [
+    {
+      "id": "usbtoolbox-1.2.0",
+      "kind": "download",
+      "url": "https://github.com/USBToolBox/kext/releases/download/1.2.0/USBToolBox-1.2.0-RELEASE.zip",
+      "sha256": "c315a3a5acfd496dd97d0d19b4fbd1d487103d2fd541c5651583d4c9cebcfe07",
+      "destinationBase": "tahoe26",
+      "archive_paths": [
+        {
+          "source": "USBToolBox.kext/Contents/MacOS/USBToolBox",
+          "target": "EFI/OC/Kexts/USBToolBox.kext/Contents/MacOS/USBToolBox",
+          "sha256": "c5c8dc205a079ee3f90b7875fb5ff622e4f15d32f29cf519123dab2822c422b7"
+        },
+        {
+          "source": "USBToolBox.kext/Contents/Info.plist",
+          "target": "EFI/OC/Kexts/USBToolBox.kext/Contents/Info.plist",
+          "sha256": "f6095d4d3b026aa05169a71b32313d343ab4ac114a2be667dd64479d6643cab3"
+        }
+      ]
+    },
+    {
+      "id": "amfipass-1.4.1-mod",
+      "kind": "download",
+      "url": "https://raw.githubusercontent.com/b00t0x/WhateverXe-Graphics/v0.3.2/extras/AMFIPass-v1.4.1-Mod-RELEASE.zip",
+      "sha256": "71f41de42e355d2a83e6f093ef34a5b24d0a9c9a9085830b2317f1b874f56250",
+      "destinationBase": "tahoe26",
+      "archive_paths": [
+        {
+          "source": "AMFIPass.kext/Contents/Info.plist",
+          "target": "EFI/OC/Kexts/AMFIPass.kext/Contents/Info.plist",
+          "sha256": "eb3fda04c0e8c8ce0ef4cfc984dcfb771db6aee476d379bd4bc3b7a74a00e4e9"
+        },
+        {
+          "source": "AMFIPass.kext/Contents/MacOS/AMFIPass",
+          "target": "EFI/OC/Kexts/AMFIPass.kext/Contents/MacOS/AMFIPass",
+          "sha256": "2d36aeca1740b258e6bb0b66844b5bfb59a0edb7cdd9ef78206689e5d223d8dc"
+        },
+        {
+          "source": "AMFIPass.kext/Contents/_CodeSignature/CodeResources",
+          "target": "EFI/OC/Kexts/AMFIPass.kext/Contents/_CodeSignature/CodeResources",
+          "sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+        }
+      ]
+    },
+    {
+      "id": "hfsplus",
+      "kind": "download",
+      "url": "https://raw.githubusercontent.com/acidanthera/OcBinaryData/master/Drivers/HfsPlus.efi",
+      "sha256": "a55b5fff36578864ba6792c4c6369c71f6f35b61dd5a853ddf8583cd36c31d8f",
+      "destinationBase": "tahoe26",
+      "target": "EFI/OC/Drivers/HfsPlus.efi"
+    },
+    {
+      "id": "whateverxe-graphics-0.3.2",
+      "kind": "download",
+      "url": "https://github.com/b00t0x/WhateverXe-Graphics/releases/download/v0.3.2/WhateverXe-Graphics-0.3.2.pkg",
+      "sha256": "7ac6c7149248c483efbd93555294d587a93d81392421f3af8a4f5b1b5fcc0101",
+      "size": 95196691,
+      "destinationBase": "tahoe26",
+      "target": "downloads/WhateverXe-Graphics-0.3.2.pkg",
+      "install": "在已启动的 Tahoe 完整系统内安装；成功后重启。",
+      "license_notice": "打包工具的 BSD 许可不覆盖 Apple/Intel 派生图形 payload；本仓库不附带该 pkg。"
+    },
+    {
+      "id": "simplehda540preprobe",
+      "kind": "local-build",
+      "destinationBase": "tahoe26",
+      "target": "EFI/OC/Kexts/SimpleHDA540PreProbe.kext",
+      "enabled_in_final_config": true,
+      "instructions": "audio/README.md",
+      "source_url": "https://github.com/laobamac/SimpleHDA",
+      "reference_files": {
+        "Contents/Info.plist": "d2605aac84148be06c6efd3b8adedc331817d8063880fa5d3f10f9acdd1e525b",
+        "Contents/MacOS/SimpleHDA": "91cbf8ccebcd6cb156050bf0811c946276db6750eb2fa7750fc4897ee001143a"
+      },
+      "note": "本机定制完整二进制未分发；按音频说明在本机准备对应构建，不用标准上游版本替代。"
+    },
+    {
+      "id": "simplehda",
+      "kind": "disabled-reference",
+      "destinationBase": "tahoe26",
+      "target": "EFI/OC/Kexts/SimpleHDA.kext",
+      "enabled_in_final_config": false,
+      "instructions": "audio/README.md",
+      "source_url": "https://github.com/laobamac/SimpleHDA",
+      "reference_files": {
+        "Contents/Info.plist": "b9916b1919a73858de2940c5bb8f39951e92e3c1fb64d84c8cac69dd36c10f92",
+        "Contents/MacOS/SimpleHDA": "f74c9dbddf43266c97c5f72cd76498bce1d6b5bd3731a947be62f1378b4c7954"
+      },
+      "note": "最终配置中的关闭条目，无需准备。"
+    },
+    {
+      "id": "tigerlake-dsp-probe",
+      "kind": "disabled-reference",
+      "destinationBase": "tahoe26",
+      "target": "EFI/OC/Kexts/TigerLakeDSPProbe.kext",
+      "enabled_in_final_config": false,
+      "note": "最终配置中保留关闭条目以保持参数记录；不打包、不下载、不启用。"
+    }
+  ],
+  "packaged_components": [
+    {
+      "bundle": "AirportItlwm-Sonoma14.4.kext",
+      "version": "2.3.0",
+      "path": "EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext",
+      "files": {
+        "Contents/Info.plist": "2b3757455d26564bcac6be6f40d49bf33bc5a18dbbc2af0e23d3b3a65f4f190d",
+        "Contents/MacOS/AirportItlwm": "06242efe0c085c5ae9fe386efc964aeb4c7c639cbed1c4c156f049589eedc1f8"
+      },
+      "license_file": "../licenses/sonoma14/itlwm-LICENSE",
+      "source_url": "https://github.com/OpenIntelWireless/itlwm/tree/v2.3.0",
+      "firmware_license_file": "../licenses/sonoma14/itlwm-firmware-LICENSE"
+    },
+    {
+      "bundle": "AirportItlwm.kext",
+      "version": "2.4.0",
+      "path": "EFI/OC/Kexts/AirportItlwm.kext",
+      "files": {
+        "Contents/Info.plist": "7c40b4f5357b2285ddba9d2f650d639aed13fbb2b046fb3746be98ebaf258770",
+        "Contents/MacOS/AirportItlwm": "dea5faf20a32339cdf316eedeeeff5f528cbc78be5e8c1b7df702d58d0ba9a83"
+      },
+      "license_file": "../licenses/tahoe26/AirportItlwm-8ae5115-LICENSE",
+      "source_url": "https://github.com/laobamac/itlwm/tree/8ae5115",
+      "firmware_license_file": "../licenses/tahoe26/AirportItlwm-8ae5115-firmware-LICENSE"
+    },
+    {
+      "bundle": "AppleALC.kext",
+      "version": "1.9.8",
+      "path": "EFI/OC/Kexts/AppleALC.kext",
+      "files": {
+        "Contents/Info.plist": "55a7b8ff8868f7eba08acda3d7926a28f0a797780fdd73b0e155f157e122b185",
+        "Contents/MacOS/AppleALC": "690b96189491b9d6f64aa552da6684714d80ade4ad4ec9027251c3257a2d16e8"
+      },
+      "license_file": "../licenses/sonoma14/AppleALC-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/AppleALC/tree/1.9.8"
+    },
+    {
+      "bundle": "BlueToolFixup.kext",
+      "version": "2.7.2",
+      "path": "EFI/OC/Kexts/BlueToolFixup.kext",
+      "files": {
+        "Contents/Info.plist": "a0fcdb909add9c5201f1b188f0a8a70ded80a29f29b9b8a74960cc2aff8ed85a",
+        "Contents/MacOS/BlueToolFixup": "f3244382a43866138ff449b14f1e54fb069ad3e4b14cbc753858650efdbbce52"
+      },
+      "license_file": "../licenses/sonoma14/BrcmPatchRAM-LICENSE",
+      "source_url": "https://github.com/acidanthera/BrcmPatchRAM/tree/2.7.2"
+    },
+    {
+      "bundle": "BrightnessKeys.kext",
+      "version": "1.0.3",
+      "path": "EFI/OC/Kexts/BrightnessKeys.kext",
+      "files": {
+        "Contents/Info.plist": "dcb67af7ba32d861ce548bb5856797bcd51c23ef662335fdb10865650d7b4e5a",
+        "Contents/MacOS/BrightnessKeys": "74c5cbc2dbeba0aec76f53582c350d7d2b42dc93f23a81884f288805c7add662"
+      },
+      "license_file": "../licenses/sonoma14/BrightnessKeys-LICENSE",
+      "source_url": "https://github.com/acidanthera/BrightnessKeys/tree/1.0.3"
+    },
+    {
+      "bundle": "IntelBTPatcher.kext",
+      "version": "2.5.2",
+      "path": "EFI/OC/Kexts/IntelBTPatcher.kext",
+      "files": {
+        "Contents/Info.plist": "07a14842346fa48c57ae39cd5565532222b1c94925abcb9e82b0906b272d6325",
+        "Contents/MacOS/IntelBTPatcher": "36f001ddaaf20685203cd080972beff62f938306236fcf9fdf373c2c034ce358"
+      },
+      "license_file": "../licenses/tahoe26/IntelBTPatcher-2.5.2-LICENSE",
+      "source_url": "https://github.com/lshbluesky/IntelBluetoothFirmware/tree/v2.5.2"
+    },
+    {
+      "bundle": "IntelBluetoothFirmware.kext",
+      "version": "2.4.0",
+      "path": "EFI/OC/Kexts/IntelBluetoothFirmware.kext",
+      "files": {
+        "Contents/Info.plist": "11ab8f27d377b4d5d1546fa3dbb4b01b6847576fd0156f98a758b85242d5c928",
+        "Contents/MacOS/IntelBluetoothFirmware": "e2b5ae657b93c5d746acaa40652f6af96a305a892111f1dd0c8ea6a717a6c109"
+      },
+      "license_file": "../licenses/sonoma14/IntelBluetoothFirmware-LICENSE",
+      "source_url": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/tree/v2.4.0",
+      "firmware_license_file": "../licenses/sonoma14/IntelBluetoothFirmware-firmware-LICENSE"
+    },
+    {
+      "bundle": "Lilu.kext",
+      "version": "1.7.2",
+      "path": "EFI/OC/Kexts/Lilu.kext",
+      "files": {
+        "Contents/Info.plist": "b7798755a2dda3006783341efa5837444ceda21c7a743651276e1accbb8d4dd3",
+        "Contents/MacOS/Lilu": "ff98508b40a1eb5fb477029db8886412520f8e39965279ea331c99e3d2e3b274"
+      },
+      "license_file": "../licenses/sonoma14/Lilu-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/Lilu/tree/1.7.2"
+    },
+    {
+      "bundle": "NVMeFix.kext",
+      "version": "1.1.3",
+      "path": "EFI/OC/Kexts/NVMeFix.kext",
+      "files": {
+        "Contents/Info.plist": "37c3f3927190728514ea7a352ae3909c23c9c76bb6305cea4d7445fabdb31a30",
+        "Contents/MacOS/NVMeFix": "3e2632eaf09c6cb87e88c5681371e194c53b6653ddbf8693f0bbb1ae42470ef8"
+      },
+      "license_file": "../licenses/sonoma14/NVMeFix-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/NVMeFix/tree/1.1.3"
+    },
+    {
+      "bundle": "SMCBatteryManager.kext",
+      "version": "1.3.8",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext",
+      "files": {
+        "Contents/Info.plist": "99f711358e27a5307f430472360ce99648f850bb0307ed84d7eaa6b014417f26",
+        "Contents/MacOS/SMCBatteryManager": "2f0b3525cd85e803b8247ff959f16e3f434d3b8126328e11086b9c0bfddf9216",
+        "Contents/Resources/SSDT-BATC.dsl": "e66bbd57e5c6ef0ddbc3a6e51f68fe875d84709b73d4772e1c193269f2a89e4b"
+      },
+      "license_file": "../licenses/sonoma14/VirtualSMC-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/VirtualSMC/tree/1.3.8"
+    },
+    {
+      "bundle": "SMCProcessor.kext",
+      "version": "1.3.8",
+      "path": "EFI/OC/Kexts/SMCProcessor.kext",
+      "files": {
+        "Contents/Info.plist": "82291d0ecdf69d81a535dba2c352dd74c1189d01b6bb0955e924ae27e69e0136",
+        "Contents/MacOS/SMCProcessor": "87b0c5497af7a4397180e351073ba047ff2683be95768f1f231589683e4edebe"
+      },
+      "license_file": "../licenses/sonoma14/VirtualSMC-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/VirtualSMC/tree/1.3.8"
+    },
+    {
+      "bundle": "UTBMap.kext",
+      "version": "1.0",
+      "path": "EFI/OC/Kexts/UTBMap.kext",
+      "files": {
+        "Contents/Info.plist": "a8bbb8b1fbeb9f72b6470bbe4f5da87b9545e10c393f3defb4cd85a6e8328396"
+      },
+      "source": "本机 USB 端口映射数据；无可执行文件。"
+    },
+    {
+      "bundle": "VirtualSMC.kext",
+      "version": "1.3.8",
+      "path": "EFI/OC/Kexts/VirtualSMC.kext",
+      "files": {
+        "Contents/Info.plist": "6d3cf2e1ee61a428b3477cb332fbd285eba715ecfceb12a05cc7b3fda2b95f89",
+        "Contents/MacOS/VirtualSMC": "b55cd581b0127fe1a0ac050a69129ba5012b4547f6a9d1abfa3ad41849a2a246"
+      },
+      "license_file": "../licenses/sonoma14/VirtualSMC-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/VirtualSMC/tree/1.3.8"
+    },
+    {
+      "bundle": "VoodooI2C.kext",
+      "version": "2.9.1",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext",
+      "files": {
+        "Contents/Info.plist": "3173e98a2ffef7bb2d5cfa2acea1fec64c23612a8b23b1a4f8f7d72146d4d0eb",
+        "Contents/MacOS/VoodooI2C": "78213b539c31a158bd3fce3fea7bf0da8380c442a94f2b13ddd91d43717c9037",
+        "Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+        "Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist": "e16709c9bc30545ed84857be7a1e7d88da4641349301d093ba62a421aa70812a",
+        "Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO": "4fabb5f4704f62956931abc84ea8248202d0a4a44546c7062a9e6665aa8423da",
+        "Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+        "Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist": "d2673dc757b113df1df0ef1c8a218d80b9c5aef6abe5f515a64787a8cd10cc66",
+        "Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices": "20c1544ab48ea9fdfb3498436e23d76f11d309d5adcdc8a4da35f8e4be7945f5",
+        "Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+        "Contents/PlugIns/VoodooInput.kext/Contents/Info.plist": "8eb279b036ced4bc790132d5839322b97f62d0a91f334092e6a098d7fed43f37",
+        "Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput": "fbdd452f575139cd32c56a4b059b794be884262fb8e335d469dd4bfe4004853f"
+      },
+      "license_file": "../licenses/sonoma14/VoodooI2C-LICENSE.txt",
+      "source_url": "https://github.com/VoodooI2C/VoodooI2C/tree/v2.9.1"
+    },
+    {
+      "bundle": "VoodooI2CHID.kext",
+      "version": "1",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext",
+      "files": {
+        "Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+        "Contents/Info.plist": "5c9e6eea43bcfb48740a860b6a622579b7b837afe93825d093b38c3be206c807",
+        "Contents/MacOS/VoodooI2CHID": "65975f7018ef10e2f058f46492f52fe49a5e5e2680dc7cf66af12b167f1d7f0a"
+      },
+      "license_file": "../licenses/sonoma14/VoodooI2C-LICENSE.txt",
+      "source_url": "https://github.com/VoodooI2C/VoodooI2C/tree/v2.9.1"
+    },
+    {
+      "bundle": "VoodooPS2Controller.kext",
+      "version": "2.3.7",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext",
+      "files": {
+        "Contents/Info.plist": "8aa06881627cd459cdf293a2903037d2df47548ee5b3c66be179f86375fb3aa7",
+        "Contents/MacOS/VoodooPS2Controller": "f78d6bf95fb403eccdebf3590015606d5ce4ea73bb78c3f1f20f03ce037b4e24",
+        "Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+        "Contents/PlugIns/VoodooInput.kext/Contents/Info.plist": "fd8d708b536ee2fc0937d96d2ec2346d18b61bf18d873ca39234b4257826f9bd",
+        "Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput": "0fc8f18ed84ac3ba5141e19c89e498cc53c05adbb1e29950783071064e59e1f6",
+        "Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist": "2fc964e03056dbd290df3891f8d105eab9bdd471160db2cdf2b21fdd634fbf87",
+        "Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard": "b55758219af1b12b1c0e5e116ff1ee65dc5d8484086e5231103c242a5858a1e5",
+        "Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist": "7618e2f0e2fcfa0472fa4b34781920fb478ec55a82e6979d5fc0dcede00f43f7",
+        "Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse": "d729d7ba0def0e3c71ded9b4908a1752ac4784c93e631fc7f07fcf7b9fdf89e2",
+        "Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist": "1ec54c8c364bbd407c772039b33e38e538752b9de84f6320ee5c43050aedd9f0",
+        "Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad": "718585e226a091298ad1c5a674e53205be30249979838cea1ba18eb298175eb1"
+      },
+      "license_file": "../licenses/sonoma14/VoodooPS2-LICENSE.md",
+      "source_url": "https://github.com/acidanthera/VoodooPS2/tree/2.3.7"
+    },
+    {
+      "bundle": "WhateverGreen.kext",
+      "version": "1.7.1",
+      "path": "EFI/OC/Kexts/WhateverGreen.kext",
+      "files": {
+        "Contents/Info.plist": "6e973a3dc47f4b707828cb8f790f3a4cc4e32d9b01accfcb6c2433f8e6cffb45",
+        "Contents/MacOS/WhateverGreen": "17944705056d6d929661da2b60dd859e753228aad3ea96a3e8d0d803bc30bd45"
+      },
+      "license_file": "../licenses/sonoma14/WhateverGreen-LICENSE.txt",
+      "source_url": "https://github.com/acidanthera/WhateverGreen/tree/1.7.1"
+    },
+    {
+      "bundle": "WhateverXe-Tahoe.kext",
+      "version": "0.6.1",
+      "path": "EFI/OC/Kexts/WhateverXe-Tahoe.kext",
+      "files": {
+        "Contents/Info.plist": "3f8b06f4979a82b3ecf8faa4f6002333ed70cecbf87a897a495373f3cf6d3057",
+        "Contents/MacOS/WhateverXe": "e92b65b0cce5964aacb0e7674a762fb8bd85dee5a931d15bd80b0edcafd1c39b"
+      },
+      "license_file": "../licenses/tahoe26/WhateverXe-0.6.1-LICENSE.txt",
+      "source_url": "https://github.com/b00t0x/WhateverXe/tree/0.6.1"
+    },
+    {
+      "bundle": "WhateverXe.kext",
+      "version": "0.6.1",
+      "path": "EFI/OC/Kexts/WhateverXe.kext",
+      "files": {
+        "Contents/Info.plist": "3f8b06f4979a82b3ecf8faa4f6002333ed70cecbf87a897a495373f3cf6d3057",
+        "Contents/MacOS/WhateverXe": "e92b65b0cce5964aacb0e7674a762fb8bd85dee5a931d15bd80b0edcafd1c39b"
+      },
+      "license_file": "../licenses/tahoe26/WhateverXe-0.6.1-LICENSE.txt",
+      "source_url": "https://github.com/b00t0x/WhateverXe/tree/0.6.1"
+    },
+    {
+      "bundle": "itlwm.kext",
+      "version": "2.3.0",
+      "path": "EFI/OC/Kexts/itlwm.kext",
+      "files": {
+        "Contents/Info.plist": "3354fe68cd0d051189bcb3f2a547af7788e202fc73ea1e579c2848778f0a67f3",
+        "Contents/MacOS/itlwm": "63952b0b7373e6a7e75a9a4f8ab0789a52a48ceb99bb0c8d0f387004d487690b"
+      },
+      "license_file": "../licenses/sonoma14/itlwm-LICENSE",
+      "source_url": "https://github.com/OpenIntelWireless/itlwm/tree/v2.3.0",
+      "local_change": "WiFiConfig 已清为空字典，未保留网络名称或口令。",
+      "firmware_license_file": "../licenses/sonoma14/itlwm-firmware-LICENSE"
+    }
+  ],
+  "bootloader": {
+    "version": "1.0.8",
+    "source_url": "https://github.com/acidanthera/OpenCorePkg/tree/1.0.8",
+    "license_file": "../licenses/sonoma14/OpenCorePkg-LICENSE.txt",
+    "build": "DEBUG",
+    "files": {
+      "EFI/BOOT/BOOTx64.efi": "7b26e33bfd84fbc5025fcb16994f7eda3224d15edcfc004d71c8761e08a766fd",
+      "EFI/OC/OpenCore.efi": "11ba0b763d765fb82187214d1fa2ee5a9330f851461c12e34d532b7b91097875",
+      "EFI/OC/Drivers/OpenRuntime.efi": "cf2df818f7510ca1be321f1ff6481fcbe246c92b16a905ffc5ff654158e05b66"
+    }
+  },
+  "notes": [
+    "下载工具在本地补齐 destinationBase/target 指定路径；下载缓存、外部包与补齐组件由 .gitignore 排除。",
+    "MLB、SystemSerialNumber、SystemUUID 留空，ROM 为六字节零值；补齐前不能直接启动。",
+    "Kernel/Add 中缺失但启用的 SimpleHDA540PreProbe 必须按音频说明本地构建。"
+  ]
+}

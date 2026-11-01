@@ -1,0 +1,7 @@
+# Preserve signed bundles and manifest hashes byte for byte on every platform.
+* -text
+*.efi binary
+*.aml binary
+*.exe binary
+*.ri binary
+**/Contents/MacOS/* binary
