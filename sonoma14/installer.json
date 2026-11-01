@@ -1,0 +1,15 @@
+{
+  "version": "14.8.9",
+  "build": "23J631",
+  "bytes": 13654790295,
+  "source_url": "https://swcdn.apple.com/content/downloads/13/30/140-88558-A_TN3FIE7J63/p61cqj3ktmcqilz3q64ls4ekp1os9c8qbp/InstallAssistant.pkg",
+  "apple_product": "140-88558",
+  "sha256": "ecc36bf172105f8c3325ceeb4e5ab8cc297260be806eac10b21b784ff40d8173",
+  "catalog_digest_type": "XAR compressed TOC SHA-1",
+  "catalog_digest": "10632733f9b4ab1397fffc98b53e6790e4c2c1b0",
+  "catalog_digest_matches_xar_toc": true,
+  "apple_integrity_chunks": 1303,
+  "apple_integrity_chunk_sha256_verified": true,
+  "integrity_source_url": "https://swcdn.apple.com/content/downloads/13/30/140-88558-A_TN3FIE7J63/p61cqj3ktmcqilz3q64ls4ekp1os9c8qbp/InstallAssistant.pkg.integrityDataV1",
+  "verification_record_date": "2026-10-24"
+}

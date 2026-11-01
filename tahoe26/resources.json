@@ -322,7 +322,12 @@
         "Contents/MacOS/WhateverXe": "e92b65b0cce5964aacb0e7674a762fb8bd85dee5a931d15bd80b0edcafd1c39b"
       },
       "license_file": "../licenses/tahoe26/WhateverXe-0.6.1-LICENSE.txt",
-      "source_url": "https://github.com/b00t0x/WhateverXe/tree/0.6.1"
+      "source_url": "https://github.com/b00t0x/WhateverXe/tree/0.6.1",
+      "release_archive": {
+        "url": "https://github.com/b00t0x/WhateverXe/releases/download/0.6.1/WhateverXe-0.6.1-RELEASE.zip",
+        "bytes": 1562365,
+        "sha256": "46c8cd684461db7f84a971e7479770c423f73d52d45addfb48242176b9eb04fc"
+      }
     },
     {
       "bundle": "WhateverXe.kext",

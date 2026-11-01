@@ -6,6 +6,9 @@
 - `资料/EFI-VESA-BT`：安装阶段的基础 EFI。
 - `资料/graphics`、`资料/power`：图形与电源相关配置和组件。
 - [资源来源](资源来源.json)：文件 SHA256、官方下载地址及放置位置。
+- [离线安装辅助入口](资料/offline/README.md)：原 U 盘的 Start-Offline 与 UnPlugged 获取方法。
+- [HeliPort](资料/network/README.md)：原 U 盘保留的 itlwm 无线管理工具。
+- [安装包信息](installer.json)：Sonoma 14.8.9 的 Apple 下载地址、大小和 SHA256。
 
 使用前按来源清单获取 HfsPlus、USBToolBox 1.2.0、AMFIPass 1.4.1 Mod 和图形卸载脚本，并放回清单指定位置。图形安装包从 WhateverXe Graphics 0.3.1 发行页获取。随后按操作手册填写自己的 SMBIOS 并检查 EFI 配置。
 

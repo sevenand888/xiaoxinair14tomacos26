@@ -1,0 +1,3431 @@
+{
+  "date": "2026-11-01",
+  "physical_usb_count": 2,
+  "file_count": 319,
+  "volumes": [
+    {
+      "name": "TAHOE26",
+      "usb": "Tahoe 32 GB",
+      "files": 110
+    },
+    {
+      "name": "TAHOE_DATA",
+      "usb": "Tahoe 32 GB",
+      "files": 18
+    },
+    {
+      "name": "OC_OFFLINE",
+      "usb": "Sonoma 64 GB",
+      "files": 178
+    },
+    {
+      "name": "MACOS_DATA",
+      "usb": "Sonoma 64 GB",
+      "files": 13
+    }
+  ],
+  "counts": {
+    "旧操作说明": 7,
+    "已更新操作入口": 6,
+    "已收录": 124,
+    "历史配置": 10,
+    "已脱敏收录": 3,
+    "下载获取": 10,
+    "按要求排除": 6,
+    "访问凭据": 2,
+    "早期分析资料": 29,
+    "诊断日志": 102,
+    "旧图形包": 1,
+    "已展开收录": 1,
+    "本次补充": 7,
+    "旧驱动": 4,
+    "临时软件安装包": 1,
+    "文件系统元数据": 6
+  },
+  "files": [
+    {
+      "volume": "TAHOE26",
+      "path": "README-本盘说明.txt",
+      "bytes": 3408,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "部署校验.json",
+      "bytes": 1666,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "install-tahoe-offline.sh",
+      "bytes": 3000,
+      "result": "已更新操作入口",
+      "repository_paths": [
+        "tools/recovery-install-tahoe.sh",
+        "docs/操作手册.md"
+      ],
+      "note": "采用最终安装、图形和回退步骤"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "更新说明-20261031.txt",
+      "bytes": 3408,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "recovery-install-tahoe.sh",
+      "bytes": 1232,
+      "result": "已更新操作入口",
+      "repository_paths": [
+        "tools/recovery-install-tahoe.sh",
+        "docs/操作手册.md"
+      ],
+      "note": "采用最终安装、图形和回退步骤"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "TAHOE-下一步操作.txt",
+      "bytes": 1447,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/BOOT/BOOTx64.efi",
+      "bytes": 53248,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/BOOT/BOOTx64.efi",
+        "sonoma14/资料/EFI-VESA-BT/BOOT/BOOTx64.efi"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "7b26e33bfd84fbc5025fcb16994f7eda3224d15edcfc004d71c8761e08a766fd"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/config.plist",
+      "bytes": 30002,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/OpenCore.efi",
+      "bytes": 868352,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/OpenCore.efi",
+        "sonoma14/资料/EFI-VESA-BT/OC/OpenCore.efi"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "11ba0b763d765fb82187214d1fa2ee5a9330f851461c12e34d532b7b91097875"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/config-sonoma-fallback-20261031.plist",
+      "bytes": 27170,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/config-before-wex-20261031.plist",
+      "bytes": 29679,
+      "result": "已脱敏收录",
+      "repository_paths": [
+        "tahoe26/configs/config-install.plist"
+      ],
+      "note": "已逐项比较，差异为机器身份清除"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/ACPI/SSDT-AWAC.aml",
+      "bytes": 76,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-AWAC.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-AWAC.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "ded14ed56b8885ea82bd342b382a70854428d1356fe0710c7c6d04b46f034c76"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/ACPI/SSDT-EC-USBX.aml",
+      "bytes": 275,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-EC-USBX.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-EC-USBX.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2f89a07f6fa1f31447aff636e2b98e5318601e82e9dfe94a3ba350eaa2ac9302"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/ACPI/SSDT-PLUG.aml",
+      "bytes": 98,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-PLUG.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-PLUG.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "f5e3e8b49e45e4613d5dc2ce24ca1541b9536e146e10e774dcb3dfc6580d92de"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/ACPI/SSDT-PNLF.aml",
+      "bytes": 142,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-PNLF.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-PNLF.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "d13dbe44021cdae9487605f5609225c959662d7bba53b291b2437806033bea84"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/ACPI/SSDT-XOSI.aml",
+      "bytes": 421,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-XOSI.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-XOSI.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "9f9f7ca6aaa2e92ba408905169646d83ba6725bfffda91f144203c985e98f92a"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Drivers/HfsPlus.efi",
+      "bytes": 37892,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "a55b5fff36578864ba6792c4c6369c71f6f35b61dd5a853ddf8583cd36c31d8f"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Drivers/OpenRuntime.efi",
+      "bytes": 36864,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Drivers/OpenRuntime.efi",
+        "sonoma14/资料/EFI-VESA-BT/OC/Drivers/OpenRuntime.efi"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "cf2df818f7510ca1be321f1ff6481fcbe246c92b16a905ffc5ff654158e05b66"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AMFIPass.kext/Contents/Info.plist",
+      "bytes": 2353,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "eb3fda04c0e8c8ce0ef4cfc984dcfb771db6aee476d379bd4bc3b7a74a00e4e9"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AMFIPass.kext/Contents/MacOS/AMFIPass",
+      "bytes": 832880,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "2d36aeca1740b258e6bb0b66844b5bfb59a0edb7cdd9ef78206689e5d223d8dc"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AMFIPass.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AppleALC.kext/Contents/Info.plist",
+      "bytes": 439447,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AppleALC.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AppleALC.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "55a7b8ff8868f7eba08acda3d7926a28f0a797780fdd73b0e155f157e122b185"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC",
+      "bytes": 3810852,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "690b96189491b9d6f64aa552da6684714d80ade4ad4ec9027251c3257a2d16e8"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/BlueToolFixup.kext/Contents/Info.plist",
+      "bytes": 2225,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/BlueToolFixup.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/BlueToolFixup.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "a0fcdb909add9c5201f1b188f0a8a70ded80a29f29b9b8a74960cc2aff8ed85a"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup",
+      "bytes": 41296,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "f3244382a43866138ff449b14f1e54fb069ad3e4b14cbc753858650efdbbce52"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/Info.plist",
+      "bytes": 8343,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBluetoothFirmware.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "11ab8f27d377b4d5d1546fa3dbb4b01b6847576fd0156f98a758b85242d5c928"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/MacOS/IntelBluetoothFirmware",
+      "bytes": 11513952,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/MacOS/IntelBluetoothFirmware",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBluetoothFirmware.kext/Contents/MacOS/IntelBluetoothFirmware"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e2b5ae657b93c5d746acaa40652f6af96a305a892111f1dd0c8ea6a717a6c109"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/IntelBTPatcher.kext/Contents/Info.plist",
+      "bytes": 2345,
+      "result": "已收录",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBTPatcher.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "c452e60a4655b8189719d7cd96b0e49499cb9144e568c4990041dfd23acbe4d5"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/IntelBTPatcher.kext/Contents/MacOS/IntelBTPatcher",
+      "bytes": 57864,
+      "result": "已收录",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBTPatcher.kext/Contents/MacOS/IntelBTPatcher"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "a0f75047d3f33dcd6143bb3200a5a4ef99f163bb3435dd04757bd68547259322"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/itlwm.kext/Contents/Info.plist",
+      "bytes": 2551,
+      "result": "已脱敏收录",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/itlwm.kext/Contents/Info.plist",
+        "tahoe26/EFI/OC/Kexts/itlwm.kext/Contents/Info.plist"
+      ],
+      "note": "无线预设已清空"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/itlwm.kext/Contents/MacOS/itlwm",
+      "bytes": 16038752,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/itlwm.kext/Contents/MacOS/itlwm",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/itlwm.kext/Contents/MacOS/itlwm"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "63952b0b7373e6a7e75a9a4f8ab0789a52a48ceb99bb0c8d0f387004d487690b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/Lilu.kext/Contents/Info.plist",
+      "bytes": 2742,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/Lilu.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/Lilu.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "b7798755a2dda3006783341efa5837444ceda21c7a743651276e1accbb8d4dd3"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/Lilu.kext/Contents/MacOS/Lilu",
+      "bytes": 527456,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/Lilu.kext/Contents/MacOS/Lilu",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/Lilu.kext/Contents/MacOS/Lilu"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "ff98508b40a1eb5fb477029db8886412520f8e39965279ea331c99e3d2e3b274"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/NVMeFix.kext/Contents/Info.plist",
+      "bytes": 2367,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/NVMeFix.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/NVMeFix.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "37c3f3927190728514ea7a352ae3909c23c9c76bb6305cea4d7445fabdb31a30"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix",
+      "bytes": 51312,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "3e2632eaf09c6cb87e88c5681371e194c53b6653ddbf8693f0bbb1ae42470ef8"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist",
+      "bytes": 2925,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "99f711358e27a5307f430472360ce99648f850bb0307ed84d7eaa6b014417f26"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager",
+      "bytes": 209244,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2f0b3525cd85e803b8247ff959f16e3f434d3b8126328e11086b9c0bfddf9216"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl",
+      "bytes": 18419,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e66bbd57e5c6ef0ddbc3a6e51f68fe875d84709b73d4772e1c193269f2a89e4b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/SMCProcessor.kext/Contents/Info.plist",
+      "bytes": 2738,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCProcessor.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCProcessor.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "82291d0ecdf69d81a535dba2c352dd74c1189d01b6bb0955e924ae27e69e0136"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/SMCProcessor.kext/Contents/MacOS/SMCProcessor",
+      "bytes": 49968,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCProcessor.kext/Contents/MacOS/SMCProcessor",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCProcessor.kext/Contents/MacOS/SMCProcessor"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "87b0c5497af7a4397180e351073ba047ff2683be95768f1f231589683e4edebe"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/USBToolBox.kext/Contents/Info.plist",
+      "bytes": 1804,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "f6095d4d3b026aa05169a71b32313d343ab4ac114a2be667dd64479d6643cab3"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/USBToolBox.kext/Contents/MacOS/USBToolBox",
+      "bytes": 39360,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "c5c8dc205a079ee3f90b7875fb5ff622e4f15d32f29cf519123dab2822c422b7"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/UTBMap.kext/Contents/Info.plist",
+      "bytes": 3045,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/UTBMap.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/UTBMap.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "a8bbb8b1fbeb9f72b6470bbe4f5da87b9545e10c393f3defb4cd85a6e8328396"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VirtualSMC.kext/Contents/Info.plist",
+      "bytes": 8652,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VirtualSMC.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VirtualSMC.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6d3cf2e1ee61a428b3477cb332fbd285eba715ecfceb12a05cc7b3fda2b95f89"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC",
+      "bytes": 245408,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "b55cd581b0127fe1a0ac050a69129ba5012b4547f6a9d1abfa3ad41849a2a246"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/Info.plist",
+      "bytes": 19073,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "3173e98a2ffef7bb2d5cfa2acea1fec64c23612a8b23b1a4f8f7d72146d4d0eb"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/MacOS/VoodooI2C",
+      "bytes": 174528,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/MacOS/VoodooI2C",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/MacOS/VoodooI2C"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "78213b539c31a158bd3fce3fea7bf0da8380c442a94f2b13ddd91d43717c9037"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist",
+      "bytes": 4217,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e16709c9bc30545ed84857be7a1e7d88da4641349301d093ba62a421aa70812a"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO",
+      "bytes": 303264,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "4fabb5f4704f62956931abc84ea8248202d0a4a44546c7062a9e6665aa8423da"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist",
+      "bytes": 2390,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "d2673dc757b113df1df0ef1c8a218d80b9c5aef6abe5f515a64787a8cd10cc66"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices",
+      "bytes": 62544,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "20c1544ab48ea9fdfb3498436e23d76f11d309d5adcdc8a4da35f8e4be7945f5"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+      "bytes": 2172,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "8eb279b036ced4bc790132d5839322b97f62d0a91f334092e6a098d7fed43f37"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+      "bytes": 108320,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "fbdd452f575139cd32c56a4b059b794be884262fb8e335d469dd4bfe4004853f"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext/Contents/Info.plist",
+      "bytes": 11139,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "5c9e6eea43bcfb48740a860b6a622579b7b837afe93825d093b38c3be206c807"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext/Contents/MacOS/VoodooI2CHID",
+      "bytes": 234208,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/MacOS/VoodooI2CHID",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/MacOS/VoodooI2CHID"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "65975f7018ef10e2f058f46492f52fe49a5e5e2680dc7cf66af12b167f1d7f0a"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist",
+      "bytes": 4326,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "8aa06881627cd459cdf293a2903037d2df47548ee5b3c66be179f86375fb3aa7"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller",
+      "bytes": 102472,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "f78d6bf95fb403eccdebf3590015606d5ce4ea73bb78c3f1f20f03ce037b4e24"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+      "bytes": 2171,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "fd8d708b536ee2fc0937d96d2ec2346d18b61bf18d873ca39234b4257826f9bd"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+      "bytes": 108320,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "0fc8f18ed84ac3ba5141e19c89e498cc53c05adbb1e29950783071064e59e1f6"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist",
+      "bytes": 20329,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2fc964e03056dbd290df3891f8d105eab9bdd471160db2cdf2b21fdd634fbf87"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard",
+      "bytes": 50344,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "b55758219af1b12b1c0e5e116ff1ee65dc5d8484086e5231103c242a5858a1e5"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist",
+      "bytes": 2987,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "7618e2f0e2fcfa0472fa4b34781920fb478ec55a82e6979d5fc0dcede00f43f7"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse",
+      "bytes": 35792,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "d729d7ba0def0e3c71ded9b4908a1752ac4784c93e631fc7f07fcf7b9fdf89e2"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist",
+      "bytes": 12335,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "1ec54c8c364bbd407c772039b33e38e538752b9de84f6320ee5c43050aedd9f0"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad",
+      "bytes": 152704,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "718585e226a091298ad1c5a674e53205be30249979838cea1ba18eb298175eb1"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/WhateverGreen.kext/Contents/Info.plist",
+      "bytes": 3020,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverGreen.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/WhateverGreen.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6e973a3dc47f4b707828cb8f790f3a4cc4e32d9b01accfcb6c2433f8e6cffb45"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/WhateverGreen.kext/Contents/MacOS/WhateverGreen",
+      "bytes": 527896,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverGreen.kext/Contents/MacOS/WhateverGreen",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/WhateverGreen.kext/Contents/MacOS/WhateverGreen"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "17944705056d6d929661da2b60dd859e753228aad3ea96a3e8d0d803bc30bd45"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AirportItlwm.kext/Contents/Info.plist",
+      "bytes": 3921,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "7c40b4f5357b2285ddba9d2f650d639aed13fbb2b046fb3746be98ebaf258770"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AirportItlwm.kext/Contents/MacOS/AirportItlwm",
+      "bytes": 15921096,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm.kext/Contents/MacOS/AirportItlwm"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "dea5faf20a32339cdf316eedeeeff5f528cbc78be5e8c1b7df702d58d0ba9a83"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/Info.plist",
+      "bytes": 3852,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AirportItlwm.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2b3757455d26564bcac6be6f40d49bf33bc5a18dbbc2af0e23d3b3a65f4f190d"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/MacOS/AirportItlwm",
+      "bytes": 16184416,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/MacOS/AirportItlwm",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AirportItlwm.kext/Contents/MacOS/AirportItlwm"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "06242efe0c085c5ae9fe386efc964aeb4c7c639cbed1c4c156f049589eedc1f8"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/WhateverXe.kext/Contents/Info.plist",
+      "bytes": 1589,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe.kext/Contents/Info.plist",
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "3f8b06f4979a82b3ecf8faa4f6002333ed70cecbf87a897a495373f3cf6d3057"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "EFI/OC/Kexts/WhateverXe.kext/Contents/MacOS/WhateverXe",
+      "bytes": 1366032,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe.kext/Contents/MacOS/WhateverXe",
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext/Contents/MacOS/WhateverXe"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e92b65b0cce5964aacb0e7674a762fb8bd85dee5a931d15bd80b0edcafd1c39b"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "com.apple.recovery.boot/BaseSystem.dmg",
+      "bytes": 1460293108,
+      "result": "按要求排除",
+      "repository_paths": [],
+      "note": "系统安装包、恢复镜像及其随附完整性文件"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "ssh-client/Connect-TahoeRecovery.ps1",
+      "bytes": 890,
+      "result": "访问凭据",
+      "repository_paths": [],
+      "note": "SSH 访问凭据留在本机"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "ssh-client/known_hosts",
+      "bytes": 211,
+      "result": "访问凭据",
+      "repository_paths": [],
+      "note": "SSH 访问凭据留在本机"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/macOS26-Tahoe-可行性分析与实施方案-20261030.md",
+      "bytes": 32874,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/01-core-stack-tahoe.md",
+      "bytes": 70018,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/02-whateverxe-graphics-tahoe.md",
+      "bytes": 49932,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/03-peripherals-installer-tahoe.md",
+      "bytes": 52168,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/04-local-efi-media-gap.md",
+      "bytes": 49469,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/01-acidanthera-release-matrix-20261030.md",
+      "bytes": 5018,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/01-dortania-tahoe-raw-20261030.md",
+      "bytes": 5246,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/02-whateverxe-sources.md",
+      "bytes": 16754,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/03-peripherals-facts.json",
+      "bytes": 19029,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-artifacts.json",
+      "bytes": 5857,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-basesystem-7z-list-raw.txt",
+      "bytes": 21910036,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-basesystem-check.json",
+      "bytes": 106451,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-basesystem-relevant-paths.txt",
+      "bytes": 32997,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-basesystem-sha256.txt",
+      "bytes": 151,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-basesystem-sle-kexts.txt",
+      "bytes": 4801,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-config-diff.json",
+      "bytes": 297689,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-early-vs-prep-diff.json",
+      "bytes": 1627,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-efi-file-hashes.json",
+      "bytes": 94527,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-kext-version-and-compat.json",
+      "bytes": 72188,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/04-usb-deployment-check.json",
+      "bytes": 5292,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/analyze_efi.py",
+      "bytes": 10105,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/basesystem_check.py",
+      "bytes": 13120,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/inventory_evidence.py",
+      "bytes": 28885,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/basesystem-extract/Volume1/System/Library/CoreServices/boot.efi",
+      "bytes": 723512,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/basesystem-extract/Volume1/System/Library/CoreServices/SystemVersion.plist",
+      "bytes": 604,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/basesystem-extract/Volume1/System/Library/KernelCollections/BaseSystemKernelExtensions.kc",
+      "bytes": 29589504,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/basesystem-extract/Volume1/System/Library/KernelCollections/BootKernelExtensions.kc",
+      "bytes": 67584000,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/gfx-pkg-tahoe/tahoe-payload-list.txt",
+      "bytes": 32842,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE26",
+      "path": "docs/reports/evidence/gfx-pkg-tahoe/Tahoe.pkg/PackageInfo",
+      "bytes": 1794,
+      "result": "早期分析资料",
+      "repository_paths": [
+        "docs/操作手册.md",
+        "docs/验证记录.md"
+      ],
+      "note": "最终操作步骤和修复结果已整合"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "InstallAssistant.pkg",
+      "bytes": 18380974544,
+      "result": "按要求排除",
+      "repository_paths": [],
+      "note": "系统安装包、恢复镜像及其随附完整性文件"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "install-tahoe-offline.sh",
+      "bytes": 3000,
+      "result": "已更新操作入口",
+      "repository_paths": [
+        "tools/recovery-install-tahoe.sh",
+        "docs/操作手册.md"
+      ],
+      "note": "采用最终安装、图形和回退步骤"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "recovery-install-tahoe.sh",
+      "bytes": 1232,
+      "result": "已更新操作入口",
+      "repository_paths": [
+        "tools/recovery-install-tahoe.sh",
+        "docs/操作手册.md"
+      ],
+      "note": "采用最终安装、图形和回退步骤"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "recovery-install.log",
+      "bytes": 10326,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "WhateverXe-Graphics-0.3.2.pkg",
+      "bytes": 42283393,
+      "result": "旧图形包",
+      "repository_paths": [
+        "tahoe26/resources.json"
+      ],
+      "note": "U 盘文件为 42,283,393 字节；采用已验证的 95,196,691 字节包"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "WhateverXe-0.6.1-RELEASE.zip",
+      "bytes": 1562365,
+      "result": "已展开收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext",
+        "tahoe26/resources.json"
+      ],
+      "note": "驱动已展开，补齐原归档校验值",
+      "source_sha256": "46c8cd684461db7f84a971e7479770c423f73d52d45addfb48242176b9eb04fc"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "install-graphics-and-enable-accel.sh",
+      "bytes": 1758,
+      "result": "已更新操作入口",
+      "repository_paths": [
+        "tools/recovery-install-tahoe.sh",
+        "docs/操作手册.md"
+      ],
+      "note": "采用最终安装、图形和回退步骤"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "restore-vesa-config.sh",
+      "bytes": 831,
+      "result": "已更新操作入口",
+      "repository_paths": [
+        "tools/recovery-install-tahoe.sh",
+        "docs/操作手册.md"
+      ],
+      "note": "采用最终安装、图形和回退步骤"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "TAHOE-下一步操作.txt",
+      "bytes": 1447,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "installer-meta/apple-product.plist",
+      "bytes": 4028,
+      "result": "本次补充",
+      "repository_paths": [
+        "tahoe26/installer.json"
+      ],
+      "note": "已整理版本、Apple 来源、大小及校验信息",
+      "source_sha256": "85dad30ef830fb0c0a458a40060fdfd4310702a92b3a90675bdd6b86ad21a581"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "installer-meta/source-selection.json",
+      "bytes": 529,
+      "result": "本次补充",
+      "repository_paths": [
+        "tahoe26/installer.json"
+      ],
+      "note": "已整理版本、Apple 来源、大小及校验信息",
+      "source_sha256": "2a863a4f74fec0dd530c789cf248687b01f3d6e1fba6e8755ddc3752f3592a69"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "installer-meta/InstallAssistant.pkg.integrityDataV1",
+      "bytes": 63176,
+      "result": "按要求排除",
+      "repository_paths": [],
+      "note": "系统安装包、恢复镜像及其随附完整性文件"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "backup-20261031/AirportItlwm-Sonoma14.4.kext/Contents/Info.plist",
+      "bytes": 3852,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AirportItlwm.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2b3757455d26564bcac6be6f40d49bf33bc5a18dbbc2af0e23d3b3a65f4f190d"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "backup-20261031/AirportItlwm-Sonoma14.4.kext/Contents/MacOS/AirportItlwm",
+      "bytes": 16184416,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/MacOS/AirportItlwm",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AirportItlwm.kext/Contents/MacOS/AirportItlwm"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "06242efe0c085c5ae9fe386efc964aeb4c7c639cbed1c4c156f049589eedc1f8"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "backup-20261031/WhateverXe-old.kext/Contents/Info.plist",
+      "bytes": 1589,
+      "result": "旧驱动",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext"
+      ],
+      "note": "旧版 0.5.0，已由当前版本替换"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "backup-20261031/WhateverXe-old.kext/Contents/MacOS/WhateverXe",
+      "bytes": 1235272,
+      "result": "旧驱动",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext"
+      ],
+      "note": "旧版 0.5.0，已由当前版本替换"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "test/Tailscale-1.104.4-macos.pkg",
+      "bytes": 22348067,
+      "result": "临时软件安装包",
+      "repository_paths": [],
+      "note": "远程排查时使用的客户端安装包"
+    },
+    {
+      "volume": "TAHOE_DATA",
+      "path": "test/._Tailscale-1.104.4-macos.pkg",
+      "bytes": 4096,
+      "result": "文件系统元数据",
+      "repository_paths": [],
+      "note": "AppleDouble 附属文件"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "START-HERE.txt",
+      "bytes": 1225,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-171108.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-172442.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-180608.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-183827.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-184635.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-185125.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-190412.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-192618.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-193359.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-195703.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-201507.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-204106.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-205353.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-24-220848.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-062624.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-072801.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-090510.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-093700.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-100631.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-105936.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-141805.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-143331.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-143514.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-144730.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-153621.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-162901.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-163609.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-164114.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-25-165825.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2020-01-01-000016.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-27-155634.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "panic-2026-10-27-155719.txt",
+      "bytes": 10355,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-27-160210.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "opencore-2026-10-27-160652.txt",
+      "bytes": 262144,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "com.apple.recovery.boot/BaseSystem.dmg",
+      "bytes": 789854561,
+      "result": "按要求排除",
+      "repository_paths": [],
+      "note": "系统安装包、恢复镜像及其随附完整性文件"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/BOOT/BOOTx64.efi",
+      "bytes": 53248,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/BOOT/BOOTx64.efi",
+        "sonoma14/资料/EFI-VESA-BT/BOOT/BOOTx64.efi"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "7b26e33bfd84fbc5025fcb16994f7eda3224d15edcfc004d71c8761e08a766fd"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/OpenCore.efi",
+      "bytes": 868352,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/OpenCore.efi",
+        "sonoma14/资料/EFI-VESA-BT/OC/OpenCore.efi"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "11ba0b763d765fb82187214d1fa2ee5a9330f851461c12e34d532b7b91097875"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/config.before-vsmcgen1-20261025.plist",
+      "bytes": 27400,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/config.before-unattended-boot1792940234.plist",
+      "bytes": 27401,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/config.plist",
+      "bytes": 27169,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/config.before-no-mat-20261025-212357.plist",
+      "bytes": 27410,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/ACPI/SSDT-AWAC.aml",
+      "bytes": 76,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-AWAC.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-AWAC.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "ded14ed56b8885ea82bd342b382a70854428d1356fe0710c7c6d04b46f034c76"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/ACPI/SSDT-EC-USBX.aml",
+      "bytes": 275,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-EC-USBX.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-EC-USBX.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2f89a07f6fa1f31447aff636e2b98e5318601e82e9dfe94a3ba350eaa2ac9302"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/ACPI/SSDT-PLUG.aml",
+      "bytes": 98,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-PLUG.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-PLUG.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "f5e3e8b49e45e4613d5dc2ce24ca1541b9536e146e10e774dcb3dfc6580d92de"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/ACPI/SSDT-PNLF.aml",
+      "bytes": 142,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-PNLF.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-PNLF.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "d13dbe44021cdae9487605f5609225c959662d7bba53b291b2437806033bea84"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/ACPI/SSDT-XOSI.aml",
+      "bytes": 421,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/ACPI/SSDT-XOSI.aml",
+        "sonoma14/资料/EFI-VESA-BT/OC/ACPI/SSDT-XOSI.aml"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "9f9f7ca6aaa2e92ba408905169646d83ba6725bfffda91f144203c985e98f92a"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Drivers/HfsPlus.efi",
+      "bytes": 37892,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "a55b5fff36578864ba6792c4c6369c71f6f35b61dd5a853ddf8583cd36c31d8f"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Drivers/OpenRuntime.efi",
+      "bytes": 36864,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Drivers/OpenRuntime.efi",
+        "sonoma14/资料/EFI-VESA-BT/OC/Drivers/OpenRuntime.efi"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "cf2df818f7510ca1be321f1ff6481fcbe246c92b16a905ffc5ff654158e05b66"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AirportItlwm.kext/Contents/Info.plist",
+      "bytes": 3852,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AirportItlwm.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2b3757455d26564bcac6be6f40d49bf33bc5a18dbbc2af0e23d3b3a65f4f190d"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AirportItlwm.kext/Contents/MacOS/AirportItlwm",
+      "bytes": 16184416,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AirportItlwm-Sonoma14.4.kext/Contents/MacOS/AirportItlwm",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AirportItlwm.kext/Contents/MacOS/AirportItlwm"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "06242efe0c085c5ae9fe386efc964aeb4c7c639cbed1c4c156f049589eedc1f8"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AMFIPass.kext/Contents/Info.plist",
+      "bytes": 2353,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "eb3fda04c0e8c8ce0ef4cfc984dcfb771db6aee476d379bd4bc3b7a74a00e4e9"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AMFIPass.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AMFIPass.kext/Contents/MacOS/AMFIPass",
+      "bytes": 832880,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "2d36aeca1740b258e6bb0b66844b5bfb59a0edb7cdd9ef78206689e5d223d8dc"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AppleALC.kext/Contents/Info.plist",
+      "bytes": 439447,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AppleALC.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AppleALC.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "55a7b8ff8868f7eba08acda3d7926a28f0a797780fdd73b0e155f157e122b185"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC",
+      "bytes": 3810852,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "690b96189491b9d6f64aa552da6684714d80ade4ad4ec9027251c3257a2d16e8"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/BlueToolFixup.kext/Contents/Info.plist",
+      "bytes": 2225,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/BlueToolFixup.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/BlueToolFixup.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "a0fcdb909add9c5201f1b188f0a8a70ded80a29f29b9b8a74960cc2aff8ed85a"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup",
+      "bytes": 41296,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "f3244382a43866138ff449b14f1e54fb069ad3e4b14cbc753858650efdbbce52"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/Info.plist",
+      "bytes": 8343,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBluetoothFirmware.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "11ab8f27d377b4d5d1546fa3dbb4b01b6847576fd0156f98a758b85242d5c928"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/MacOS/IntelBluetoothFirmware",
+      "bytes": 11513952,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/IntelBluetoothFirmware.kext/Contents/MacOS/IntelBluetoothFirmware",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBluetoothFirmware.kext/Contents/MacOS/IntelBluetoothFirmware"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e2b5ae657b93c5d746acaa40652f6af96a305a892111f1dd0c8ea6a717a6c109"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/IntelBTPatcher.kext/Contents/Info.plist",
+      "bytes": 2345,
+      "result": "已收录",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBTPatcher.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "c452e60a4655b8189719d7cd96b0e49499cb9144e568c4990041dfd23acbe4d5"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/IntelBTPatcher.kext/Contents/MacOS/IntelBTPatcher",
+      "bytes": 57864,
+      "result": "已收录",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/IntelBTPatcher.kext/Contents/MacOS/IntelBTPatcher"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "a0f75047d3f33dcd6143bb3200a5a4ef99f163bb3435dd04757bd68547259322"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/itlwm.kext/Contents/Info.plist",
+      "bytes": 2551,
+      "result": "已脱敏收录",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/itlwm.kext/Contents/Info.plist",
+        "tahoe26/EFI/OC/Kexts/itlwm.kext/Contents/Info.plist"
+      ],
+      "note": "无线预设已清空"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/itlwm.kext/Contents/MacOS/itlwm",
+      "bytes": 16038752,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/itlwm.kext/Contents/MacOS/itlwm",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/itlwm.kext/Contents/MacOS/itlwm"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "63952b0b7373e6a7e75a9a4f8ab0789a52a48ceb99bb0c8d0f387004d487690b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/Lilu.kext/Contents/Info.plist",
+      "bytes": 2742,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/Lilu.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/Lilu.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "b7798755a2dda3006783341efa5837444ceda21c7a743651276e1accbb8d4dd3"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/Lilu.kext/Contents/MacOS/Lilu",
+      "bytes": 527456,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/Lilu.kext/Contents/MacOS/Lilu",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/Lilu.kext/Contents/MacOS/Lilu"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "ff98508b40a1eb5fb477029db8886412520f8e39965279ea331c99e3d2e3b274"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/NVMeFix.kext/Contents/Info.plist",
+      "bytes": 2367,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/NVMeFix.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/NVMeFix.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "37c3f3927190728514ea7a352ae3909c23c9c76bb6305cea4d7445fabdb31a30"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix",
+      "bytes": 51312,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "3e2632eaf09c6cb87e88c5681371e194c53b6653ddbf8693f0bbb1ae42470ef8"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist",
+      "bytes": 2925,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "99f711358e27a5307f430472360ce99648f850bb0307ed84d7eaa6b014417f26"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager",
+      "bytes": 209244,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2f0b3525cd85e803b8247ff959f16e3f434d3b8126328e11086b9c0bfddf9216"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl",
+      "bytes": 18419,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e66bbd57e5c6ef0ddbc3a6e51f68fe875d84709b73d4772e1c193269f2a89e4b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/SMCProcessor.kext/Contents/Info.plist",
+      "bytes": 2738,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCProcessor.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCProcessor.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "82291d0ecdf69d81a535dba2c352dd74c1189d01b6bb0955e924ae27e69e0136"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/SMCProcessor.kext/Contents/MacOS/SMCProcessor",
+      "bytes": 49968,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/SMCProcessor.kext/Contents/MacOS/SMCProcessor",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/SMCProcessor.kext/Contents/MacOS/SMCProcessor"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "87b0c5497af7a4397180e351073ba047ff2683be95768f1f231589683e4edebe"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/USBToolBox.kext/Contents/Info.plist",
+      "bytes": 1804,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "f6095d4d3b026aa05169a71b32313d343ab4ac114a2be667dd64479d6643cab3"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/USBToolBox.kext/Contents/MacOS/USBToolBox",
+      "bytes": 39360,
+      "result": "下载获取",
+      "repository_paths": [
+        "sonoma14/资源来源.json",
+        "sonoma14/资源来源.json",
+        "tahoe26/resources.json"
+      ],
+      "note": "资源清单已固定原文件 SHA256 和下载来源",
+      "source_sha256": "c5c8dc205a079ee3f90b7875fb5ff622e4f15d32f29cf519123dab2822c422b7"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/UTBMap.kext/Contents/Info.plist",
+      "bytes": 3045,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/UTBMap.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/UTBMap.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "a8bbb8b1fbeb9f72b6470bbe4f5da87b9545e10c393f3defb4cd85a6e8328396"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VirtualSMC.kext/Contents/Info.plist",
+      "bytes": 8652,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VirtualSMC.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VirtualSMC.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6d3cf2e1ee61a428b3477cb332fbd285eba715ecfceb12a05cc7b3fda2b95f89"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC",
+      "bytes": 245408,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "b55cd581b0127fe1a0ac050a69129ba5012b4547f6a9d1abfa3ad41849a2a246"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/Info.plist",
+      "bytes": 19073,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "3173e98a2ffef7bb2d5cfa2acea1fec64c23612a8b23b1a4f8f7d72146d4d0eb"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/MacOS/VoodooI2C",
+      "bytes": 174528,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/MacOS/VoodooI2C",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/MacOS/VoodooI2C"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "78213b539c31a158bd3fce3fea7bf0da8380c442a94f2b13ddd91d43717c9037"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist",
+      "bytes": 4217,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "e16709c9bc30545ed84857be7a1e7d88da4641349301d093ba62a421aa70812a"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO",
+      "bytes": 303264,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/MacOS/VoodooGPIO"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "4fabb5f4704f62956931abc84ea8248202d0a4a44546c7062a9e6665aa8423da"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist",
+      "bytes": 2390,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "d2673dc757b113df1df0ef1c8a218d80b9c5aef6abe5f515a64787a8cd10cc66"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices",
+      "bytes": 62544,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/MacOS/VoodooI2CServices"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "20c1544ab48ea9fdfb3498436e23d76f11d309d5adcdc8a4da35f8e4be7945f5"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+      "bytes": 2172,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "8eb279b036ced4bc790132d5839322b97f62d0a91f334092e6a098d7fed43f37"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+      "bytes": 108320,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "fbdd452f575139cd32c56a4b059b794be884262fb8e335d469dd4bfe4004853f"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext/Contents/Info.plist",
+      "bytes": 11139,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "5c9e6eea43bcfb48740a860b6a622579b7b837afe93825d093b38c3be206c807"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooI2CHID.kext/Contents/MacOS/VoodooI2CHID",
+      "bytes": 234208,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/MacOS/VoodooI2CHID",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/MacOS/VoodooI2CHID"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "65975f7018ef10e2f058f46492f52fe49a5e5e2680dc7cf66af12b167f1d7f0a"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist",
+      "bytes": 4326,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "8aa06881627cd459cdf293a2903037d2df47548ee5b3c66be179f86375fb3aa7"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller",
+      "bytes": 102472,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "f78d6bf95fb403eccdebf3590015606d5ce4ea73bb78c3f1f20f03ce037b4e24"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+      "bytes": 2171,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "fd8d708b536ee2fc0937d96d2ec2346d18b61bf18d873ca39234b4257826f9bd"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+      "bytes": 2200,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "tahoe26/EFI/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2CHID.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext/Contents/_CodeSignature/CodeResources",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext/Contents/_CodeSignature/CodeResources"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+      "bytes": 108320,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "0fc8f18ed84ac3ba5141e19c89e498cc53c05adbb1e29950783071064e59e1f6"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist",
+      "bytes": 20329,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "2fc964e03056dbd290df3891f8d105eab9bdd471160db2cdf2b21fdd634fbf87"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard",
+      "bytes": 50344,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "b55758219af1b12b1c0e5e116ff1ee65dc5d8484086e5231103c242a5858a1e5"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist",
+      "bytes": 2987,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "7618e2f0e2fcfa0472fa4b34781920fb478ec55a82e6979d5fc0dcede00f43f7"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse",
+      "bytes": 35792,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "d729d7ba0def0e3c71ded9b4908a1752ac4784c93e631fc7f07fcf7b9fdf89e2"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist",
+      "bytes": 12335,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "1ec54c8c364bbd407c772039b33e38e538752b9de84f6320ee5c43050aedd9f0"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad",
+      "bytes": 152704,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "718585e226a091298ad1c5a674e53205be30249979838cea1ba18eb298175eb1"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/WhateverGreen.kext/Contents/Info.plist",
+      "bytes": 3020,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverGreen.kext/Contents/Info.plist",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/WhateverGreen.kext/Contents/Info.plist"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "6e973a3dc47f4b707828cb8f790f3a4cc4e32d9b01accfcb6c2433f8e6cffb45"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/WhateverGreen.kext/Contents/MacOS/WhateverGreen",
+      "bytes": 527896,
+      "result": "已收录",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverGreen.kext/Contents/MacOS/WhateverGreen",
+        "sonoma14/资料/EFI-VESA-BT/OC/Kexts/WhateverGreen.kext/Contents/MacOS/WhateverGreen"
+      ],
+      "note": "与仓库文件 SHA256 一致",
+      "source_sha256": "17944705056d6d929661da2b60dd859e753228aad3ea96a3e8d0d803bc30bd45"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/WhateverXe.kext/Contents/Info.plist",
+      "bytes": 1589,
+      "result": "旧驱动",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext"
+      ],
+      "note": "旧版 0.5.0，已由当前版本替换"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "EFI/OC/Kexts/WhateverXe.kext/Contents/MacOS/WhateverXe",
+      "bytes": 1235272,
+      "result": "旧驱动",
+      "repository_paths": [
+        "tahoe26/EFI/OC/Kexts/WhateverXe-Tahoe.kext"
+      ],
+      "note": "旧版 0.5.0，已由当前版本替换"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/progress.log",
+      "bytes": 4590438,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0001.txt",
+      "bytes": 17726,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/expand.log",
+      "bytes": 168,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0002.txt",
+      "bytes": 15914,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0003.txt",
+      "bytes": 15873,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0004.txt",
+      "bytes": 15711,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0005.txt",
+      "bytes": 15967,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0006.txt",
+      "bytes": 15873,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/df-0003.txt",
+      "bytes": 224,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0007.txt",
+      "bytes": 15871,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0008.txt",
+      "bytes": 15989,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0009.txt",
+      "bytes": 16457,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0010.txt",
+      "bytes": 16054,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0011.txt",
+      "bytes": 15993,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/df-0004.txt",
+      "bytes": 226,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-expand-20261025-050407/snapshot-0012.txt",
+      "bytes": 14378,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-launch-20261025-051604/launch-latest.log",
+      "bytes": 8165,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-launch-20261025-051604/install-latest.log",
+      "bytes": 33745,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-launch-20261025-051604/install-full.log",
+      "bytes": 2383815,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-resume-20261025-061416/prevent-sleep.log",
+      "bytes": 11094,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-resume-20261025-061416/install-full.log",
+      "bytes": 2365253,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-resume-20261025-061416/relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-resume-20261025-061416/launch-latest.log",
+      "bytes": 8117,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/external-resume-20261025-061416/install-latest.log",
+      "bytes": 27651,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/reports.tar",
+      "bytes": 1955328,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/source-manifest.txt",
+      "bytes": 1368,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/owner-mode.txt",
+      "bytes": 10,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/mount-before.txt",
+      "bytes": 1676,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/reports-delta.tar",
+      "bytes": 1955328,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/delta-source-manifest.txt",
+      "bytes": 1368,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/reports-after-switch.tar",
+      "bytes": 1955328,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-20261025-144119/stage2-result.json",
+      "bytes": 2060,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-144603/install-baseline.log",
+      "bytes": 2296811,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-144603/._install-baseline.log",
+      "bytes": 4096,
+      "result": "文件系统元数据",
+      "repository_paths": [],
+      "note": "AppleDouble 附属文件"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-144603/install-live.log",
+      "bytes": 6879,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-144603/live-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-144603/progress-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-144603/status.log",
+      "bytes": 67759,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/reports.tar",
+      "bytes": 1953280,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/source-manifest.txt",
+      "bytes": 1368,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/owner-mode.txt",
+      "bytes": 10,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/mount-before.txt",
+      "bytes": 1514,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/reports-delta.tar",
+      "bytes": 1953280,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/delta-source-manifest.txt",
+      "bytes": 1368,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/reports-after-switch.tar",
+      "bytes": 1953280,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/diag-ram-expand-boot1792913423/stage2-result.json",
+      "bytes": 2005,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-153853/install-baseline.log",
+      "bytes": 40304,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-153853/._install-baseline.log",
+      "bytes": 4096,
+      "result": "文件系统元数据",
+      "repository_paths": [],
+      "note": "AppleDouble 附属文件"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-153853/install-live.log",
+      "bytes": 4573729,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-153853/live-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-153853/progress-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/gui-install-20261025-153853/status.log",
+      "bytes": 123779,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-authorized-20261025-155504/prepare-signal.log",
+      "bytes": 104,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-authorized-20261025-155504/install-before-ram-reclaim.log",
+      "bytes": 4538474,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-authorized-20261025-155504/._install-before-ram-reclaim.log",
+      "bytes": 4096,
+      "result": "文件系统元数据",
+      "repository_paths": [],
+      "note": "AppleDouble 附属文件"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-authorized-20261025-155504/install-reclaim-boundary.txt",
+      "bytes": 118,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/reports-initial.tar",
+      "bytes": 1860608,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/owner-mode.txt",
+      "bytes": 10,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/images-before.txt",
+      "bytes": 9015,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/delta-1.tar",
+      "bytes": 1860608,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/reports-after.tar",
+      "bytes": 2401792,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/prevent-sleep.log",
+      "bytes": 3789,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/prepare-signal.log",
+      "bytes": 102,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/install-before.log",
+      "bytes": 41900,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/._install-before.log",
+      "bytes": 4096,
+      "result": "文件系统元数据",
+      "repository_paths": [],
+      "note": "AppleDouble 附属文件"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/install-full.log",
+      "bytes": 2467349,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/install-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/system-full.log",
+      "bytes": 5334201,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/system-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/launch.log",
+      "bytes": 8278,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "OC_OFFLINE",
+      "path": "Diagnostic-Logs/cli-after-reboot-boot1792940234/launch-relay.stderr",
+      "bytes": 0,
+      "result": "诊断日志",
+      "repository_paths": [],
+      "note": "安装排查期间的日志"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "InstallAssistant.pkg.integrityDataV1",
+      "bytes": 46976,
+      "result": "按要求排除",
+      "repository_paths": [],
+      "note": "系统安装包、恢复镜像及其随附完整性文件"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "installer-verified.json",
+      "bytes": 796,
+      "result": "本次补充",
+      "repository_paths": [
+        "sonoma14/installer.json"
+      ],
+      "note": "已整理版本、Apple 来源、大小及校验信息",
+      "source_sha256": "a4bb7f3373fcbdbd32a499be8f2261b18b516d110c8d64721073cbdb56656a88"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "Start-Offline.command",
+      "bytes": 397,
+      "result": "本次补充",
+      "repository_paths": [
+        "sonoma14/资料/offline/Start-Offline.command",
+        "sonoma14/资源来源.json"
+      ],
+      "note": "启动入口、中文说明和固定版本下载",
+      "source_sha256": "a0c3065efe8a226908f403b633b64889cf5f0ac612eacc2402a0cf266f54679b"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "UnPlugged-README.md",
+      "bytes": 7275,
+      "result": "本次补充",
+      "repository_paths": [
+        "sonoma14/资料/offline/README.md",
+        "sonoma14/资源来源.json"
+      ],
+      "note": "启动入口、中文说明和固定版本下载",
+      "source_sha256": "38465cfa2adc6834d3dd1246c06eed37b7643009a9e6fa5b67c4aeb30b9697ea"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "UnPlugged.command",
+      "bytes": 26931,
+      "result": "本次补充",
+      "repository_paths": [
+        "sonoma14/资料/offline/README.md",
+        "sonoma14/资源来源.json"
+      ],
+      "note": "启动入口、中文说明和固定版本下载",
+      "source_sha256": "92f2c3dc4e01ba465ecdf8c309aa9f1c3c91cf8c47199befb04cecde36b5c6c5"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "离线安装说明.txt",
+      "bytes": 1867,
+      "result": "旧操作说明",
+      "repository_paths": [
+        "docs/操作手册.md"
+      ],
+      "note": "对应早期诊断或安装阶段，已整合为当前手册"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "InstallAssistant.pkg",
+      "bytes": 13654790295,
+      "result": "按要求排除",
+      "repository_paths": [],
+      "note": "系统安装包、恢复镜像及其随附完整性文件"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "HeliPort-1.5.0.dmg",
+      "bytes": 8601948,
+      "result": "本次补充",
+      "repository_paths": [
+        "sonoma14/资料/network/README.md",
+        "sonoma14/资源来源.json"
+      ],
+      "note": "保留官方获取入口和原文件 SHA256",
+      "source_sha256": "49cbe7abea742a3c662a836f14c05b79b3e6e6577c897b57101f5bd0a086eec8"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "._HeliPort-1.5.0.dmg",
+      "bytes": 4096,
+      "result": "文件系统元数据",
+      "repository_paths": [],
+      "note": "AppleDouble 附属文件"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "NextTests/config-nvme-enabled.plist",
+      "bytes": 27158,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "NextTests/config-before-nvme-20261025.plist",
+      "bytes": 27166,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "NextTests/config-normal-scan-timeout0.plist",
+      "bytes": 27157,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    },
+    {
+      "volume": "MACOS_DATA",
+      "path": "NextTests/config-diagnostic-usb-only.plist",
+      "bytes": 27193,
+      "result": "历史配置",
+      "repository_paths": [
+        "sonoma14/资料/EFI-VESA-BT/OC/config.plist",
+        "tahoe26/EFI/OC/config.plist"
+      ],
+      "note": "采用仓库当前配置和安装配置"
+    }
+  ]
+}

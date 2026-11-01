@@ -457,6 +457,31 @@
       "path": "资料/tools/ocvalidate.exe",
       "bytes": 633979,
       "sha256": "f459053cefdf1b2ff8c1d74d61d9dc5bb30ce72a4fcbf15bb29333e77d8d045f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1154,
+      "sha256": "94c6a75d88550a89e9bf63b0b059babc60db2e80c470a50c423c3208e008a4c3"
+    },
+    {
+      "path": "installer.json",
+      "bytes": 787,
+      "sha256": "3ce4019d0f0edb3d0c947ba165b30b4726b9a57c8840824bd5e712b0a6ad1f9b"
+    },
+    {
+      "path": "资料/offline/Start-Offline.command",
+      "bytes": 397,
+      "sha256": "a0c3065efe8a226908f403b633b64889cf5f0ac612eacc2402a0cf266f54679b"
+    },
+    {
+      "path": "资料/offline/README.md",
+      "bytes": 1389,
+      "sha256": "abf42fac2a7cefbd8ee10fd763e22a4bdb030a417d549f6c4d78118ff4f4ceee"
+    },
+    {
+      "path": "资料/network/README.md",
+      "bytes": 791,
+      "sha256": "bb8dba20cdcfdd0b819050b15b4bb08b567e125e186545721c89ce6c6241aba9"
     }
   ],
   "schema_version": 1,
@@ -516,6 +541,25 @@
       "sha256": "aad40b6bd2a25b72584f7343a06bb532feab33b3611ac70b1a22731946acbc8b",
       "destinationBase": "sonoma14",
       "target": "资料/graphics/uninstall.sh"
+    },
+    {
+      "id": "unplugged",
+      "kind": "download",
+      "url": "https://raw.githubusercontent.com/corpnewt/UnPlugged/4f8e9135c1de051adf96f4d5b3045a383f7aaa01/UnPlugged.command",
+      "sha256": "92f2c3dc4e01ba465ecdf8c309aa9f1c3c91cf8c47199befb04cecde36b5c6c5",
+      "destinationBase": "sonoma14",
+      "target": "资料/offline/UnPlugged.command",
+      "note": "原 Sonoma U 盘的交互式离线安装工具，与固定上游提交一致。"
+    },
+    {
+      "id": "heliport-1.5.0",
+      "kind": "download",
+      "url": "https://github.com/OpenIntelWireless/HeliPort/releases/download/v1.5.0/HeliPort.dmg",
+      "sha256": "49cbe7abea742a3c662a836f14c05b79b3e6e6577c897b57101f5bd0a086eec8",
+      "destinationBase": "sonoma14",
+      "target": "downloads/HeliPort-1.5.0.dmg",
+      "bytes": 8601948,
+      "note": "itlwm 无线管理工具；当前默认方案使用 AirportItlwm。"
     }
   ],
   "opencore": {
